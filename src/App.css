@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Yantramanav');
+
+.App {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-family: 'Yantramanav', sans-serif;
+}
