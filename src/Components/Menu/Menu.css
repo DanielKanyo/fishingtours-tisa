@@ -11,7 +11,7 @@
   overflow: hidden;
 }
 
-.Menubar ul li {
+.Menubar ul .menuItem {
   padding: 14px 20px;
   float: left;
 }
@@ -21,7 +21,21 @@
   color: white;
 }
 
-.Menubar ul li:hover {
-  background: #30b70b;
+.Menubar ul .menuItem:hover {
+  background: #158dd3;
   cursor: pointer;
+}
+
+.language {
+  float: right;
+  padding: 14px 14px;
+}
+
+.language:hover {
+  cursor: pointer;
+  background: #158dd3;
+}
+
+.active {
+  background: #0c78b7;
 }

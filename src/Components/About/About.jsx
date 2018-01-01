@@ -4,7 +4,7 @@ class About extends Component {
   render() {
     return (
       <div>
-        About component
+        {this.props.objectProp.data.aboutContent.title}
       </div>
     );
   }
