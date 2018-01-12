@@ -1,8 +1,27 @@
-.homeHeader {
-  height: 350px;
+.Home {
+  position: relative;
+  background-color: #FFF;
+  width: 1000px;
+  padding: 0px 0px 0px 0px;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  border-bottom: none;
+  margin-left: auto;
+  margin-right: auto;
+  direction: ltr;
+  overflow: hidden;
+  height: auto;
+  display: table;
 }
 
-.swipeView {
-  height: 350px;
-  background: blue;
+.Content {
+  width: 700px;
+  display: table-cell;
+}
+
+.Sidebar {
+  background-color: red;
+  position: relative;
+  height: 100%;
+  display: table-cell;
 }
