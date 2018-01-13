@@ -1,0 +1,36 @@
+.About {
+  position: relative;
+  background-color: #565656;
+  color: white;
+  width: 1000px;
+  padding: 0px 0px 0px 0px;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  border-bottom: none;
+  margin-left: auto;
+  margin-right: auto;
+  direction: ltr;
+  overflow: hidden;
+  height: auto;
+  display: table;
+}
+
+.Content {
+  width: 700px;
+  display: table-cell;
+}
+
+.aboutTitle {
+  color: white;
+  padding: 12px 15px;
+  background: #0c78b7;
+}
+
+.aboutContent {
+  padding: 15px 20px 0px 20px;
+  text-align: justify;
+}
+
+.aboutLast {
+  padding-bottom: 15px;
+}

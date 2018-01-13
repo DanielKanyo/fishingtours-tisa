@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 /** style */
 import './Home.css';
+/** components */
+import Sidebar from '../Sidebar/Sidebar';
+import News from '../News/News';
 
 class Home extends Component {
 
@@ -12,8 +15,8 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <div className="Content">Content</div>
-        <div className="Sidebar">Sidebar</div>
+        <News />
+        <Sidebar />
       </div>
     );
   }

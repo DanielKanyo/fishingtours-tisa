@@ -8,6 +8,7 @@
   -webkit-box-shadow: 0px 0px 29px 0px rgba(82,82,82,1);
   -moz-box-shadow: 0px 0px 29px 0px rgba(82,82,82,1);
   box-shadow: 0px 0px 29px 0px rgba(82,82,82,1);
+  margin-bottom: 40px;
 }
 
 .Menubar {
@@ -61,7 +62,7 @@
   background-image: url('./Images/1.jpg');
   background-repeat: none;
   background-size: 1000px;
-  background-position-y: 30%;
+  background-position-y: 28%;
 }
 
 .second {
@@ -76,4 +77,27 @@
   background-repeat: none;
   background-size: 1000px;
   background-position-y: 50%;
+}
+
+.pageTitleContent {
+  padding: 18px 0px;
+}
+
+.pageTitle {
+  width: 250px;
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  padding: 10px;
+  background: #0c78b7;
+}
+
+.pageOwner {
+  width: 250px;
+  text-align: center;
+  color: white;
+  font-size: 16px;
+  margin-top: 6px;
+  padding: 5px 10px;
+  background: #0c78b7;
 }

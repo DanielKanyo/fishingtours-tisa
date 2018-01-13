@@ -87,14 +87,17 @@ class App extends Component {
               <div className="swipeableView">
                 <AutoPlaySwipeableViews index={index} onChangeIndex={this.handleChangeIndex}>
                   <div className="swipeView first">
-                    {this.state.object.data.title}
+                    <div className="pageTitleContent">
+                      <div className="pageTitle">{this.state.object.data.title}</div>
+                      <div className="pageOwner">{this.state.object.data.owner}</div>
+                    </div>
                   </div>
                   <div className="swipeView second">
-                  {this.state.object.data.title}
-              </div>
+                    {this.state.object.data.title}
+                  </div>
                   <div className="swipeView third">
-                  {this.state.object.data.title}
-              </div>
+                    {this.state.object.data.title}
+                  </div>
                 </AutoPlaySwipeableViews>
               </div>
 
