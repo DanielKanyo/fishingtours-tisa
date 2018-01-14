@@ -21,16 +21,20 @@
 }
 
 .aboutTitle {
+  margin: 8px;
+  margin-bottom: 0px;
   color: white;
   padding: 12px 15px;
   background: #0c78b7;
 }
 
-.aboutContent {
-  padding: 15px 20px 0px 20px;
-  text-align: justify;
+.aboutContentWrapper {
+  background: rgba(1, 1, 1, 0.2);
+  margin: 8px 8px 8px 8px;
 }
 
-.aboutLast {
-  padding-bottom: 15px;
+.aboutContent {
+  
+  padding: 8px 15px 8px 15px;
+  text-align: justify;
 }

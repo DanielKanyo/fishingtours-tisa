@@ -11,6 +11,7 @@ import { DataSrb } from './Data/data-srb';
 /** components */
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
+import Footer from './Components/Footer/Footer';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -71,41 +72,40 @@ class App extends Component {
     const { index } = this.state;
     return (
       <div className="App">
-        <div className="Menu">
-          <Router>
-            <div>
-              <div className="Menubar">
-                <ul>
-                  <Link to="/"><li className="menuItem">{this.state.object.data.menuItems[0]}</li></Link>
-                  <Link to="/about"><li className="menuItem">{this.state.object.data.menuItems[1]}</li></Link>
-                  <li onClick={(e) => this.changeLanguage(e)} className="language">HUN</li>
-                  <li onClick={(e) => this.changeLanguage(e)} className="language">SRB</li>
-                  <li onClick={(e) => this.changeLanguage(e)} className="language active">ENG</li>
-                </ul>
-              </div>
-
-              <div className="swipeableView">
-                <AutoPlaySwipeableViews index={index} onChangeIndex={this.handleChangeIndex}>
-                  <div className="swipeView first">
-                    <div className="pageTitleContent">
-                      <div className="pageTitle">{this.state.object.data.title}</div>
-                      <div className="pageOwner">{this.state.object.data.owner}</div>
-                    </div>
-                  </div>
-                  <div className="swipeView second">
-                    {this.state.object.data.title}
-                  </div>
-                  <div className="swipeView third">
-                    {this.state.object.data.title}
-                  </div>
-                </AutoPlaySwipeableViews>
-              </div>
-
-              <Route exact path="/" render={() => <Home objectProp={this.state.object} />} />
-              <Route path="/about" render={() => <About objectProp={this.state.object} />} />
+        <Router>
+          <div>
+            <div className="Menubar">
+              <ul>
+                <Link to="/"><li className="menuItem">{this.state.object.data.menuItems[0]}</li></Link>
+                <Link to="/about"><li className="menuItem">{this.state.object.data.menuItems[1]}</li></Link>
+                <li onClick={(e) => this.changeLanguage(e)} className="language">HUN</li>
+                <li onClick={(e) => this.changeLanguage(e)} className="language">SRB</li>
+                <li onClick={(e) => this.changeLanguage(e)} className="language active">ENG</li>
+              </ul>
             </div>
-          </Router>
-        </div>
+
+            <div className="swipeableView">
+              <AutoPlaySwipeableViews index={index} onChangeIndex={this.handleChangeIndex}>
+                <div className="swipeView first">
+                  <div className="pageTitleContent">
+                    <div className="pageTitle">{this.state.object.data.title}</div>
+                    <div className="pageOwner">{this.state.object.data.owner}</div>
+                  </div>
+                </div>
+                <div className="swipeView second">
+
+                </div>
+                <div className="swipeView third">
+                
+                </div>
+              </AutoPlaySwipeableViews>
+            </div>
+
+            <Route exact path="/" render={() => <Home objectProp={this.state.object} />} />
+            <Route path="/about" render={() => <About objectProp={this.state.object} />} />
+          </div>
+        </Router>
+        <Footer />
       </div>
     );
   }

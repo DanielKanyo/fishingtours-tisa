@@ -16,14 +16,16 @@ class About extends Component {
       <div className="About">
         <div className="Content">
           <div className="aboutTitle">{this.props.objectProp.data.aboutContent.title}</div>
-          <div className="aboutContent">{this.props.objectProp.data.aboutContent.content_part1}</div>
-          <div className="aboutContent">{this.props.objectProp.data.aboutContent.content_part2}</div>
-          <div className="aboutContent">{this.props.objectProp.data.aboutContent.content_part3}</div>
-          <div className="aboutContent">{this.props.objectProp.data.aboutContent.content_part4}</div>
-          <div className="aboutContent">{this.props.objectProp.data.aboutContent.content_part5}</div>
-          <div className="aboutContent">{this.props.objectProp.data.aboutContent.content_part6}</div>
-          <div className="aboutContent">{this.props.objectProp.data.aboutContent.content_part7}</div>
-          <div className="aboutContent aboutLast">{this.props.objectProp.data.aboutContent.content_part8}</div>
+          <div className="aboutContentWrapper">
+            <div className="aboutContent">{this.props.objectProp.data.aboutContent.content_part1}</div>
+            <div className="aboutContent">{this.props.objectProp.data.aboutContent.content_part2}</div>
+            <div className="aboutContent">{this.props.objectProp.data.aboutContent.content_part3}</div>
+            <div className="aboutContent">{this.props.objectProp.data.aboutContent.content_part4}</div>
+            <div className="aboutContent">{this.props.objectProp.data.aboutContent.content_part5}</div>
+            <div className="aboutContent">{this.props.objectProp.data.aboutContent.content_part6}</div>
+            <div className="aboutContent">{this.props.objectProp.data.aboutContent.content_part7}</div>
+            <div className="aboutContent aboutLast">{this.props.objectProp.data.aboutContent.content_part8}</div>
+          </div>
         </div>
         <Sidebar />
       </div>
