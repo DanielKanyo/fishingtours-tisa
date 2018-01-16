@@ -32,7 +32,8 @@
   margin-right: 8px;
   border-radius: 4px;
   float: left;
-  border: 1px solid #0c78b7;
+  border: 1px solid #2da019;
+  transition: 0.1s;
 }
 
 .Menubar ul a {
@@ -41,7 +42,7 @@
 }
 
 .Menubar ul .menuItem:hover {
-  background: #158dd3;
+  background: #36bd1e;
   cursor: pointer;
 }
 
@@ -50,21 +51,21 @@
   float: right;
   margin-left: 8px;
   padding: 10px 10px;
-  border: 1px solid #0c78b7;
+  border: 1px solid #2da019;
+  transition: 0.1s;
 }
 
 .language:hover {
   cursor: pointer;
-  background: #158dd3;
+  background: #36bd1e;
 }
 
 .active {
-  background: #0c78b7;
+  background: #2da019;
 }
 
 .swipeView {
   height: 350px;
-  background: blue;
 }
 
 .first {
@@ -100,7 +101,7 @@
   color: white;
   font-size: 28px;
   padding: 10px;
-  background: #0c78b7;
+  background: #2da019;
 }
 
 .pageOwner {
@@ -112,7 +113,7 @@
   font-size: 16px;
   margin-top: 6px;
   padding: 5px 10px;
-  background: #0c78b7;
+  background: #2da019;
 }
 
 .title {
@@ -120,13 +121,14 @@
   margin: 8px 8px 0px 0px;
   color: white;
   padding: 12px 15px;
-  background: #0c78b7;
+  background: #2da019;
 }
 
 .contentWrapper {
   background: rgba(1, 1, 1, 0.2);
   border-radius: 4px;
   margin: 8px 8px 8px 8px;
+  border: 1px solid #2da019;
 }
 
 .compContent {
@@ -148,4 +150,8 @@
 
 .tile-icon-bar {
   display: none;
+}
+
+.custom-overlay {
+  padding: 5px; 
 }

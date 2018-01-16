@@ -47,6 +47,7 @@ const IMAGES =
     thumbnail: "https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/22450120_1744931579147915_5468299739751487217_n.jpg?oh=8b7646372ad90ff5f84579390ea47dbc&oe=5AF9A26A",
     thumbnailWidth: 256,
     thumbnailHeight: 192,
+    customOverlay: "Fogás",
     caption: "Csali",
   }]
 
@@ -64,7 +65,7 @@ class Gallery extends Component {
         <div className="Content">
           <div className="title galleryTitle">{this.props.objectProp.data.galleryContent.title}</div>
           <div className="contentWrapper galleryContentWrapper">
-            <GalleryGrid images={IMAGES} backdropClosesModal={true} />
+            <GalleryGrid images={IMAGES} backdropClosesModal={true} enableKeyboardInput={true} />
           </div>
         </div>
         <Sidebar objectProp={this.props.objectProp} />
