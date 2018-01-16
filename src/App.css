@@ -29,9 +29,10 @@
 
 .Menubar ul .menuItem {
   padding: 10px 20px;
-  margin-right: 5px;
+  margin-right: 8px;
   border-radius: 4px;
   float: left;
+  border: 1px solid #0c78b7;
 }
 
 .Menubar ul a {
@@ -47,8 +48,9 @@
 .language {
   border-radius: 4px;
   float: right;
-  margin-left: 5px;
-  padding: 10px 20px;
+  margin-left: 8px;
+  padding: 10px 10px;
+  border: 1px solid #0c78b7;
 }
 
 .language:hover {
@@ -130,4 +132,20 @@
 .compContent {
   padding: 8px 15px 8px 15px;
   text-align: justify;
+}
+
+.tile {
+  border-radius: 5px;
+}
+
+.tile-viewport {
+  border-radius: 4px;
+}
+
+.tile-overlay {
+  border-radius: 5px;
+}
+
+.tile-icon-bar {
+  display: none;
 }

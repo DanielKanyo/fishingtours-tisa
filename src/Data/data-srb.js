@@ -1,6 +1,6 @@
 export const DataSrb = {
   data: {
-    menuItems: ["Kuca", "O Meni"],
+    menuItems: ["Kuca", "O Meni", "Slike"],
     title: "Ribolovne Ture - Tisa",
     aboutContent: {
       title: "O Meni",
@@ -18,6 +18,9 @@ export const DataSrb = {
     },
     sidebarContent: {
       title: "Info & Socialno"
+    },
+    galleryContent: {
+      title: "Slike"
     }
   }
 }

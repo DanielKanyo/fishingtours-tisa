@@ -1,6 +1,6 @@
 export const DataEng = {
   data: {
-    menuItems: ["Home", "About"],
+    menuItems: ["Home", "About", "Gallery"],
     title: "Fishingtours - Tisa",
     owner: "Janos Kanyo",
     aboutContent: {
@@ -19,6 +19,9 @@ export const DataEng = {
     },
     sidebarContent: {
       title: "Info & Social"
+    },
+    galleryContent: {
+      title: "Gallery"
     }
   }
 }

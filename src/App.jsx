@@ -12,6 +12,7 @@ import { DataSrb } from './Data/data-srb';
 import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
+import Gallery from './Components/Gallery/Gallery';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -107,6 +108,11 @@ class App extends Component {
                     {this.state.object.data.menuItems[1]}
                   </li>
                 </Link>
+                <Link to="/gallery">
+                  <li onClick={(e) => this.changeActiveComp(e)} className="menuItem">
+                    {this.state.object.data.menuItems[2]}
+                  </li>
+                </Link>
                 <li onClick={(e) => this.changeLanguage(e)} className="language">HUN</li>
                 <li onClick={(e) => this.changeLanguage(e)} className="language">SRB</li>
                 <li onClick={(e) => this.changeLanguage(e)} className="language active">ENG</li>
@@ -125,13 +131,14 @@ class App extends Component {
 
                 </div>
                 <div className="swipeView third">
-                
+
                 </div>
               </AutoPlaySwipeableViews>
             </div>
 
             <Route exact path="/" render={() => <Home objectProp={this.state.object} />} />
             <Route path="/about" render={() => <About objectProp={this.state.object} />} />
+            <Route path="/gallery" render={() => <Gallery objectProp={this.state.object} />} />
           </div>
         </Router>
         <Footer />
