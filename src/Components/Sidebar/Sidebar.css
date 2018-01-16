@@ -5,14 +5,10 @@
   display: table-cell;
 }
 
-.sidebarTitle {
-  margin: 8px 8px 0px 0px;
-  color: white;
-  padding: 12px 15px;
-  background: #0c78b7;
+.sidebarContent {
+  margin: 8px 0px;
 }
 
-.sidebarContent {
-  padding: 15px 20px 0px 20px;
-  text-align: justify;
+iframe {
+  border-radius: 4px !important;
 }

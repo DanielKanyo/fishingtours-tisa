@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FacebookProvider, { Page } from 'react-facebook';
 /** style */
 import './Sidebar.css';
 
@@ -12,22 +13,11 @@ class Sidebar extends Component {
   render() {
     return (
       <div className="Sidebar">
-        <div className="sidebarTitle">Sidebar</div>
+        <div className="title sidebarTitle">{this.props.objectProp.data.sidebarContent.title}</div>
         <div className="sidebarContent">
-          <div className="fb-page"
-            data-href="https://www.facebook.com/KanyoJanos65/"
-            data-tabs="messages"
-            data-small-header="true"
-            data-adapt-container-width="false"
-            data-hide-cover="true"
-            data-show-facepile="true">
-            <blockquote cite="https://www.facebook.com/KanyoJanos65/"
-              className="fb-xfbml-parse-ignore">
-              <a href="https://www.facebook.com/KanyoJanos65/">
-                Horgásztúrák - Magyarkanizsa
-          </a>
-            </blockquote>
-          </div>
+          <FacebookProvider appId="320234841816215">
+            <Page href="https://www.facebook.com/KanyoJanos65/" hideCover={true} tabs="messages" height="400" width="292"/>
+          </FacebookProvider>
         </div>
       </div>
     );

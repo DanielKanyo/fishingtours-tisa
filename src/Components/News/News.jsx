@@ -12,7 +12,10 @@ class News extends Component {
   render() {
     return (
       <div className="News">
-        News
+        <div className="title newsTitle">{this.props.objectProp.data.newsContent.title}</div>
+        <div className="contentWrapper aboutContentWrapper">
+          news
+        </div>
       </div>
     );
   }

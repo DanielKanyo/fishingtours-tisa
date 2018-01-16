@@ -13,6 +13,12 @@ export const DataHun = {
       content_part6: `Rakós bot, spicc bot, match bot, bolognai, mind-mind az úszós horgász kelléktárja. A keszeg horgászat a legszórakoztatóbb, legérdekesebb és a legsikeresebb horgászatok közé sorolnám, mivel keszegből van legtöbb. Ez a horgász módszer adja talán a legtöbb sikert, a legnagyobb eredményt. Habár ma már a feederes horgászat is felveszi a versenyt, bármelyik úszós módszerrel.`,
       content_part7: `Bányatavakban a bojlis horgászatot is megtanultam, hogy ne mindig csak „kis halakra” vadásszunk! Kihívás volt a nagy hal fárasztása, akadóból való megfogása. A bojli készítés házilag, hogy ne kelljen megvenni a jó minőségű, de drága golyócskákat. Mi magunk készítsünk olyan bojlikat, amelyeket szívesen felvesznek, szeretnek a pontyok.`,
       content_part8: `Pergetés. Mára talán a legkedveltebb módszereim egyikéhez tartozik. Természetes vizeinkben egyre kevesebb a ragadozó, egyre nehezebb megtalálni, becsapni őket. Az a rengeteg mű csali, ami rendelkezésünkre áll! Hát nem egyszerű feladat kiválogatni a legjobb mozgású, színű csalik! Imitálni a kishal mozgását, olyan szinten hogy azt a ragadozók is elhiggyék, azt már „művészetnek” is nevezhetnénk!`,
+    },
+    newsContent: {
+      title: "Újdonság",
+    },
+    sidebarContent: {
+      title: "Infó és Közösség"
     }
   }
 }

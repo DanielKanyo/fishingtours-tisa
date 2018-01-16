@@ -24,6 +24,7 @@ class App extends Component {
       index: 0
     }
     this.changeLanguage = this.changeLanguage.bind(this);
+    this.changeActiveComp = this.changeActiveComp.bind(this);
   }
 
   //change language, buttons backgroung color and the dataobject source
@@ -31,8 +32,9 @@ class App extends Component {
 
     let element = e.target;
     let elementText = element.innerHTML;
+    let languageNumber = document.getElementsByClassName("language").length;
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < languageNumber; i++) {
       let languageElement = document.getElementsByClassName("language")[i];
       let elementClasses = languageElement.className;
       let contains = elementClasses.includes("active");
@@ -62,6 +64,25 @@ class App extends Component {
     }
   }
 
+  changeActiveComp(e) {
+    let element = e.target;
+    let siteNumber = document.getElementsByClassName("menuItem").length;
+
+    for (let i = 0; i < siteNumber; i++) {
+      let menuElement = document.getElementsByClassName("menuItem")[i];
+      let elementClasses = menuElement.className;
+      let contains = elementClasses.includes("active");
+
+      if (element !== menuElement) {
+        if (contains) {
+          menuElement.classList.remove("active");
+        }
+      }
+    }
+
+    element.classList.add("active");
+  }
+
   handleChangeIndex = index => {
     this.setState({
       index,
@@ -76,8 +97,16 @@ class App extends Component {
           <div>
             <div className="Menubar">
               <ul>
-                <Link to="/"><li className="menuItem">{this.state.object.data.menuItems[0]}</li></Link>
-                <Link to="/about"><li className="menuItem">{this.state.object.data.menuItems[1]}</li></Link>
+                <Link to="/">
+                  <li onClick={(e) => this.changeActiveComp(e)} className="menuItem active">
+                    {this.state.object.data.menuItems[0]}
+                  </li>
+                </Link>
+                <Link to="/about">
+                  <li onClick={(e) => this.changeActiveComp(e)} className="menuItem">
+                    {this.state.object.data.menuItems[1]}
+                  </li>
+                </Link>
                 <li onClick={(e) => this.changeLanguage(e)} className="language">HUN</li>
                 <li onClick={(e) => this.changeLanguage(e)} className="language">SRB</li>
                 <li onClick={(e) => this.changeLanguage(e)} className="language active">ENG</li>

@@ -15,8 +15,8 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <News />
-        <Sidebar />
+        <News objectProp={this.props.objectProp} />
+        <Sidebar objectProp={this.props.objectProp} />
       </div>
     );
   }

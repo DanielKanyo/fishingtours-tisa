@@ -13,6 +13,12 @@ export const DataEng = {
       content_part6: `Rods: carbon pole, telescopic, Match, Bologna etc. are all the basic equipment for float fishing. Fishing for minnow-type fish are among the most interesting, and the most successful for me, because those fish are the most common. Perhaps, this method gives to fisherman the most success and greatest results. In today's modern conditions, we have to mention, fishing with feeder-rod is became the rival to the float method.`,
       content_part7: `Never wanted only the small fish, so I learned fishing with boilie (small boiled pasta pellets), or - carp fishing. It was a big challenge to patiently manoeuver until the carp gets tired, and then pull it, because forcing could lead to the loss of catch. Learn about how to make boilie at home was also important, because you wouldn’t have to buy good quality, but expensive boilies. It isn’t  theasy to make such of any kind, which carp gladly takes.`,
       content_part8: `Spin fishing. At this time, it is one of my most favourite method of fishing. In our natural/open waters there are less and less predators, and they are all more and more difficult to find and deceive to bite. There are so many types of lures: jigs, spinners, spoons, soft plastic baits, plugs, spinerbaits, flies etc. Certainly, they are all excellent quality, and it isn’t an easy task to choose the most successful one. Which behaves like a little fish? Which color makes them better? Imitating the movements of a small fish, and that the predator believes it tоo!?­­So we can say: that is a true "Art of fishing"!`,
+    },
+    newsContent: {
+      title: "News",
+    },
+    sidebarContent: {
+      title: "Info & Social"
     }
   }
 }
