@@ -13,6 +13,7 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 import Gallery from './Components/Gallery/Gallery';
+import Blog from './Components/Blog/Blog';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -113,6 +114,11 @@ class App extends Component {
                     {this.state.object.data.menuItems[2]}
                   </li>
                 </Link>
+                <Link to="/blog">
+                  <li onClick={(e) => this.changeActiveComp(e)} className="menuItem">
+                    {this.state.object.data.menuItems[3]}
+                  </li>
+                </Link>
                 <li onClick={(e) => this.changeLanguage(e)} className="language">HUN</li>
                 <li onClick={(e) => this.changeLanguage(e)} className="language">SRB</li>
                 <li onClick={(e) => this.changeLanguage(e)} className="language active">ENG</li>
@@ -139,6 +145,7 @@ class App extends Component {
             <Route exact path="/" render={() => <Home objectProp={this.state.object} />} />
             <Route path="/about" render={() => <About objectProp={this.state.object} />} />
             <Route path="/gallery" render={() => <Gallery objectProp={this.state.object} />} />
+            <Route path="/blog" render={() => <Blog objectProp={this.state.object} />} />
           </div>
         </Router>
         <Footer />

@@ -1,7 +1,8 @@
 export const DataSrb = {
   data: {
-    menuItems: ["Kuca", "O Meni", "Slike"],
+    menuItems: ["Kuca", "O Meni", "Slike", "Blog"],
     title: "Ribolovne Ture - Tisa",
+    owner: "Janoš Kanjo",
     aboutContent: {
       title: "O Meni",
       content_part1: `Rođen sam u Adorjanu, u jednom malom selu na obali Tise. Već kao dete sam prirastao vodi, prirodi. U to vreme, svu zabavu zadovoljila je Tisa, jer nismo mogli naći ništa drugo zabavno. Nije bilo televizora, kompjutera, laptopa...`,
@@ -21,6 +22,9 @@ export const DataSrb = {
     },
     galleryContent: {
       title: "Slike"
+    },
+    blogContent: {
+      title: "Blog"
     }
   }
 }

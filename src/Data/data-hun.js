@@ -1,6 +1,6 @@
 export const DataHun = {
   data: {
-    menuItems: ["Kezdőlap", "Rólam", "Galéria"],
+    menuItems: ["Kezdőlap", "Rólam", "Galéria", "Blog"],
     title: "Horgásztúrák - Tisza",
     owner: "Kanyó János",
     aboutContent: {
@@ -22,6 +22,9 @@ export const DataHun = {
     },
     galleryContent: {
       title: "Galéria"
+    },
+    blogContent: {
+      title: "Blog"
     }
   }
 }

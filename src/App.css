@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Yantramanav');
 
 .App {
-  max-width: 1000px;
+  width: 1000px;
   margin: 0 auto;
   margin-top: 40px;
   font-family: 'Yantramanav', sans-serif;
@@ -122,6 +122,11 @@
   color: white;
   padding: 12px 15px;
   background: #2da019;
+}
+
+.Content {
+  width: 700px;
+  display: table-cell;
 }
 
 .contentWrapper {

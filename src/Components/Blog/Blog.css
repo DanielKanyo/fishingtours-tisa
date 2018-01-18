@@ -1,4 +1,4 @@
-.Home {
+.Blog {
   position: relative;
   background-color: #565656;
   color: white;
@@ -13,4 +13,12 @@
   overflow: hidden;
   height: auto;
   display: table;
+}
+
+.blogContentWrapper {
+  padding: 8px;
+}
+
+.blogTitle {
+  margin: 8px;
 }
