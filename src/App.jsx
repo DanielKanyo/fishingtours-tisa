@@ -13,7 +13,7 @@ import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 import Gallery from './Components/Gallery/Gallery';
-import Blog from './Components/Blog/Blog';
+import Blog1 from './Components/Blog1/Blog1';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -23,7 +23,8 @@ class App extends Component {
     super(props);
     this.state = {
       object: DataEng,
-      index: 0
+      index: 0,
+      dropdownMargin: -256
     }
     this.changeLanguage = this.changeLanguage.bind(this);
     this.changeActiveComp = this.changeActiveComp.bind(this);
@@ -53,15 +54,18 @@ class App extends Component {
 
     if (elementText === "HUN") {
       this.setState({
-        object: DataHun
+        object: DataHun,
+        dropdownMargin: -281
       });
     } else if (elementText === "ENG") {
       this.setState({
-        object: DataEng
+        object: DataEng,
+        dropdownMargin: -256  
       });
     } else {
       this.setState({
-        object: DataSrb
+        object: DataSrb,
+        dropdownMargin: -264
       });
     }
   }
@@ -99,26 +103,34 @@ class App extends Component {
           <div>
             <div className="Menubar">
               <ul>
-                <Link to="/">
-                  <li onClick={(e) => this.changeActiveComp(e)} className="menuItem active">
-                    {this.state.object.data.menuItems[0]}
+                  <li>
+                    <Link to="/" className="menuItem active" onClick={(e) => this.changeActiveComp(e)}>
+                      {this.state.object.data.menuItems[0]}
+                    </Link>
                   </li>
-                </Link>
-                <Link to="/about">
-                  <li onClick={(e) => this.changeActiveComp(e)} className="menuItem">
-                    {this.state.object.data.menuItems[1]}
+                  <li>
+                    <Link to="/about" className="menuItem" onClick={(e) => this.changeActiveComp(e)}>
+                      {this.state.object.data.menuItems[1]}
+                    </Link>
                   </li>
-                </Link>
-                <Link to="/gallery">
-                  <li onClick={(e) => this.changeActiveComp(e)} className="menuItem">
-                    {this.state.object.data.menuItems[2]}
+                  <li>
+                    <Link to="/gallery" className="menuItem" onClick={(e) => this.changeActiveComp(e)}>
+                      {this.state.object.data.menuItems[2]}
+                    </Link>
                   </li>
-                </Link>
-                <Link to="/blog">
-                  <li onClick={(e) => this.changeActiveComp(e)} className="menuItem">
-                    {this.state.object.data.menuItems[3]}
-                  </li>
-                </Link>
+                <li className="dropdown">
+                  <a className="dropbtn">Blog</a>
+                  <div className="dropdown-content" style={{marginLeft: this.state.dropdownMargin}}>
+                    <Link to="/blog1" className="menuItem" onClick={(e) => this.changeActiveComp(e)}>
+                      <div className="entryTitle">
+                        A "Glavinjar" - vertikális mű csali - 1. rész
+                      </div>
+                      <div className="entryDate">
+                        2015.01.13
+                      </div>
+                    </Link>
+                  </div>
+                </li>
                 <li onClick={(e) => this.changeLanguage(e)} className="language">HUN</li>
                 <li onClick={(e) => this.changeLanguage(e)} className="language">SRB</li>
                 <li onClick={(e) => this.changeLanguage(e)} className="language active">ENG</li>
@@ -145,7 +157,7 @@ class App extends Component {
             <Route exact path="/" render={() => <Home objectProp={this.state.object} />} />
             <Route path="/about" render={() => <About objectProp={this.state.object} />} />
             <Route path="/gallery" render={() => <Gallery objectProp={this.state.object} />} />
-            <Route path="/blog" render={() => <Blog objectProp={this.state.object} />} />
+            <Route path="/blog1" render={() => <Blog1 objectProp={this.state.object} />} />
           </div>
         </Router>
         <Footer />

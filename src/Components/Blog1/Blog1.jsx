@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 /** style */
-import './Blog.css';
+import './Blog1.css';
 /** components */
 import Sidebar from '../Sidebar/Sidebar';
 
-class Blog extends Component {
+class Blog1 extends Component {
 
   constructor(props) {
     super(props);
@@ -17,7 +17,7 @@ class Blog extends Component {
         <div className="Content">
           <div className="title blogTitle">{this.props.objectProp.data.blogContent.title}</div>
           <div className="contentWrapper blogContentWrapper">
-            Blog
+            Blog1
           </div>
         </div>
         <Sidebar objectProp={this.props.objectProp} />
@@ -26,4 +26,4 @@ class Blog extends Component {
   }
 }
 
-export default Blog;
+export default Blog1;
