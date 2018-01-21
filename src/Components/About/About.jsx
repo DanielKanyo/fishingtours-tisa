@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FacebookProvider, { Like } from 'react-facebook';
 /** components */
 import Sidebar from '../Sidebar/Sidebar';
 /** style */
@@ -25,6 +26,12 @@ class About extends Component {
             <div className="compContent aboutContent">{this.props.objectProp.data.aboutContent.content_part6}</div>
             <div className="compContent aboutContent">{this.props.objectProp.data.aboutContent.content_part7}</div>
             <div className="compContent aboutContent aboutLast">{this.props.objectProp.data.aboutContent.content_part8}</div>
+
+            <div className="contentSocialFooter aboutFooter">
+              <FacebookProvider appId="320234841816215">
+                <Like href="http://fishingtours-tisa/about" action="recommend" layout="button_count" share />
+              </FacebookProvider>
+            </div>
           </div>
         </div>
         <Sidebar objectProp={this.props.objectProp} />

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GalleryGrid from 'react-grid-gallery';
+import FacebookProvider, { Like } from 'react-facebook';
 /** components */
 import Sidebar from '../Sidebar/Sidebar';
 /** style */
@@ -66,6 +67,14 @@ class Gallery extends Component {
           <div className="title galleryTitle">{this.props.objectProp.data.galleryContent.title}</div>
           <div className="contentWrapper galleryContentWrapper">
             <GalleryGrid images={IMAGES} backdropClosesModal={true} enableKeyboardInput={true} />
+
+            <div className="gallerySocialWrapper">
+              <div className="contentSocialFooter">
+                <FacebookProvider appId="320234841816215">
+                  <Like href="http://fishingtours-tisa/gallery" action="recommend" layout="button_count" share />
+                </FacebookProvider>
+              </div>
+            </div>
           </div>
         </div>
         <Sidebar objectProp={this.props.objectProp} />

@@ -16,9 +16,25 @@
 }
 
 .blogContentWrapper {
-  padding: 8px;
+  padding: 8px 8px;
 }
 
 .blogTitle {
   margin: 8px;
+}
+
+.blogContentTitle {
+  padding: 8px 7px;
+  font-size: 20px;
+}
+
+.blogContent {
+  text-align: justify;
+  padding: 8px 7px;
+}
+
+.contentSocialFooter {
+  background: #2da019;
+  border-radius: 4px;
+  padding: 8px;
 }

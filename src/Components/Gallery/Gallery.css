@@ -20,6 +20,14 @@
 }
 
 .galleryContentWrapper {
-  height: 368px;
+  height: 414px;
   padding: 8px;
+}
+
+.gallerySocialWrapper {
+  clear: both;
+  position: relative;
+  margin-top: 8px;
+  width: 100%;
+  float: left;
 }

@@ -1,6 +1,6 @@
 export const DataSrb = {
   data: {
-    menuItems: ["Početna", "O Meni", "Slike", "Blog"],
+    menuItems: ["Početna", "O Meni", "Slike", "Blog", "Kontact"],
     title: "Ribolovne Ture - Tisa",
     owner: "Janoš Kanjo",
     aboutContent: {
@@ -25,6 +25,9 @@ export const DataSrb = {
     },
     blogContent: {
       title: "Blog"
+    },
+    contactContent: {
+      title: "Kontact"
     }
   }
 }

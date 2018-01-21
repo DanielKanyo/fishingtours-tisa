@@ -1,4 +1,4 @@
-.About {
+.Contact {
   position: relative;
   background-color: #565656;
   color: white;
@@ -15,10 +15,6 @@
   display: table;
 }
 
-.aboutTitle {
-  margin: 8px;
-}
-
-.aboutFooter {
-  margin: 0px 8px 8px 8px;
+.contactTitle {
+  margin-left: 8px;
 }
