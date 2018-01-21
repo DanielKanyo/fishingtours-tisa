@@ -16,6 +16,7 @@ export const DataEng = {
     },
     newsContent: {
       title: "News",
+      readmore: "Read more..."
     },
     sidebarContent: {
       title: "Info & Social"

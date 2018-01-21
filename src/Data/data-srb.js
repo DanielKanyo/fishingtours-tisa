@@ -16,6 +16,7 @@ export const DataSrb = {
     },
     newsContent: {
       title: "Novo",
+      readmore: "Čitam..."
     },
     sidebarContent: {
       title: "Info & Društvena medija"

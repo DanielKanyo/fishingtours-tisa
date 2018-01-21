@@ -9,12 +9,12 @@ import { DataHun } from './Data/data-hun';
 import { DataEng } from './Data/data-eng';
 import { DataSrb } from './Data/data-srb';
 /** components */
-import Home from './Components/Home/Home';
 import About from './Components/About/About';
 import Footer from './Components/Footer/Footer';
 import Gallery from './Components/Gallery/Gallery';
 import Blog1 from './Components/Blog1/Blog1';
 import Contact from './Components/Contact/Contact';
+import Sidebar from './Components/Sidebar/Sidebar';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -25,10 +25,12 @@ class App extends Component {
     this.state = {
       object: DataEng,
       index: 0,
-      dropdownMargin: -256
+      dropdownMargin: -256,
+      showOrHideNews: "block"
     }
     this.changeLanguage = this.changeLanguage.bind(this);
     this.changeActiveComp = this.changeActiveComp.bind(this);
+    this.showOrHideComponent = this.showOrHideComponent.bind(this);
   }
 
   //change language, buttons backgroung color and the dataobject source
@@ -100,6 +102,20 @@ class App extends Component {
     });
   };
 
+  showOrHideComponent(e) {
+    let element = e.target;
+
+    if (element.text === "Home") {
+      this.setState({
+        showOrHideNews: "block"
+      });
+    } else {
+      this.setState({
+        showOrHideNews: "none"
+      })
+    }
+  }
+
   render() {
     const { index } = this.state;
     return (
@@ -109,24 +125,28 @@ class App extends Component {
             <div className="Menubar">
               <ul>
                 <li>
-                  <Link to="/" className="menuItem active" onClick={(e) => this.changeActiveComp(e)}>
+                  <Link to="/" className="menuItem active"
+                    onClick={(e) => { this.changeActiveComp(e); this.showOrHideComponent(e) }}>
                     {this.state.object.data.menuItems[0]}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/about" className="menuItem" onClick={(e) => this.changeActiveComp(e)}>
+                  <Link to="/about" className="menuItem"
+                    onClick={(e) => { this.changeActiveComp(e); this.showOrHideComponent(e) }}>
                     {this.state.object.data.menuItems[1]}
                   </Link>
                 </li>
                 <li>
-                  <Link to="/gallery" className="menuItem" onClick={(e) => this.changeActiveComp(e)}>
+                  <Link to="/gallery" className="menuItem"
+                    onClick={(e) => { this.changeActiveComp(e); this.showOrHideComponent(e) }}>
                     {this.state.object.data.menuItems[2]}
                   </Link>
                 </li>
                 <li className="dropdown">
                   <a className="dropbtn">Blog</a>
                   <div className="dropdown-content" style={{ marginLeft: this.state.dropdownMargin }}>
-                    <Link to="/blog1" className="menuItem" onClick={(e) => this.changeActiveComp(e)}>
+                    <Link to="/blog1" className="menuItem"
+                      onClick={(e) => { this.changeActiveComp(e); this.showOrHideComponent(e) }}>
                       <div className="entryTitle">
                         A "Glavinjar" - vertikális mű csali - 1. rész
                       </div>
@@ -137,7 +157,8 @@ class App extends Component {
                   </div>
                 </li>
                 <li>
-                  <Link to="/contact" className="menuItem" onClick={(e) => this.changeActiveComp(e)}>
+                  <Link to="/contact" className="menuItem"
+                    onClick={(e) => { this.changeActiveComp(e); this.showOrHideComponent(e) }}>
                     {this.state.object.data.menuItems[4]}
                   </Link>
                 </li>
@@ -164,7 +185,28 @@ class App extends Component {
               </AutoPlaySwipeableViews>
             </div>
 
-            <Route exact path="/" render={() => <Home objectProp={this.state.object} />} />
+            <div style={{ display: this.state.showOrHideNews }}>
+              <div className="News">
+                <div className="Content">
+                  <div className="title aboutTitle">{this.state.object.data.newsContent.title}</div>
+                  <div className="contentWrapper newsContentWrapper">
+                    <div className="newsTitle">
+                      A "Glavinjar" - vertikális mű csali - 1. rész
+                    </div>
+                    <div className="newsContent">
+                      Pár évvel ezelőtt vettem először kezembe a „Glavinjar”-t, majd az idén már kipróbálásra is sor került.
+                      Legendákat hallottam róla! Innen-onnan jöttek a hírek, hogy jó kezekben, 
+                      igazán ütős fegyver, a harcsákkal szemben...
+                    </div>
+                    <Link to="/blog1" onClick={(e) => { this.showOrHideComponent(e) }}>
+                      <div className="readMoreContent">{this.state.object.data.newsContent.readmore}</div>
+                    </Link>
+                  </div>
+                </div>
+                <Sidebar objectProp={this.state.object} />
+              </div>
+            </div>
+
             <Route path="/about" render={() => <About objectProp={this.state.object} />} />
             <Route path="/gallery" render={() => <Gallery objectProp={this.state.object} />} />
             <Route path="/blog1" render={() => <Blog1 objectProp={this.state.object} />} />

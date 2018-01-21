@@ -16,6 +16,7 @@ export const DataHun = {
     },
     newsContent: {
       title: "Újdonság",
+      readmore: "Elolvasom..."
     },
     sidebarContent: {
       title: "Infó és Közösség"
