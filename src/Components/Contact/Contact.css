@@ -20,5 +20,18 @@
 }
 
 .contactContent {
-  padding: 8px 12px;
+  padding: 8px 8px;
+}
+
+.contactText {
+  margin: 10px;
+}
+
+.lastText {
+  margin-bottom: 16px;
+}
+
+.map {
+  position: relative;
+  height: 300px;
 }

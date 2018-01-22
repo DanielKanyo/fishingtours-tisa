@@ -24,6 +24,12 @@ class Sidebar extends Component {
               <div className="sidebarInfoText number">+381 63 8888773</div>
             </div>
             <div className="sidebarNextLine">
+              <div className="sidebarIcon phoneIcon">
+                <FontAwesome name="phone" />
+              </div>
+              <div className="sidebarInfoText number">+36 20 2905247</div>
+            </div>
+            <div className="sidebarNextLine">
               <div className="sidebarIcon emailIcon">
                 <FontAwesome name="envelope" />
               </div>

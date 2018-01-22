@@ -28,7 +28,10 @@ export const DataEng = {
       title: "Blog"
     },
     contactContent: {
-      title: "Contact"
+      title: "Contact",
+      address: "Zilahy Lajos 1 / Magyarkanizsa, Serbia",
+      tel: "+381 63 8888773 / +36 20 2905247",
+      email: "jkanyo65@gmail.com"
     }
   }
 }

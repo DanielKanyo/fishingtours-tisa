@@ -16,6 +16,15 @@ import Blog1 from './Components/Blog1/Blog1';
 import Contact from './Components/Contact/Contact';
 import Sidebar from './Components/Sidebar/Sidebar';
 
+let url = window.location.href;
+let display;
+
+if (url.length === 22) {
+  display = "block";
+} else {
+  display = "none"
+}
+
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 class App extends Component {
@@ -26,7 +35,7 @@ class App extends Component {
       object: DataEng,
       index: 0,
       dropdownMargin: -256,
-      showOrHideNews: "block"
+      showOrHideNews: display
     }
     this.changeLanguage = this.changeLanguage.bind(this);
     this.changeActiveComp = this.changeActiveComp.bind(this);
@@ -90,6 +99,8 @@ class App extends Component {
 
     if (element.classList.value === "entryTitle" || element.classList.value === "entryDate") {
       element.parentNode.classList.add("active");
+      console.log(element.parentNode.parentNode.parentNode.children[0])
+      element.parentNode.parentNode.parentNode.children[0].classList.add("active");
     } else {
       element.classList.add("active");
     }
@@ -105,7 +116,7 @@ class App extends Component {
   showOrHideComponent(e) {
     let element = e.target;
 
-    if (element.text === "Home") {
+    if (element.text === "Home" || element.text === "Kezdőlap" || element.text === "Početna") {
       this.setState({
         showOrHideNews: "block"
       });
@@ -143,7 +154,7 @@ class App extends Component {
                   </Link>
                 </li>
                 <li className="dropdown">
-                  <a className="dropbtn">Blog</a>
+                  <a className="dropbtn menuItem">Blog</a>
                   <div className="dropdown-content" style={{ marginLeft: this.state.dropdownMargin }}>
                     <Link to="/blog1" className="menuItem"
                       onClick={(e) => { this.changeActiveComp(e); this.showOrHideComponent(e) }}>
@@ -198,7 +209,7 @@ class App extends Component {
                       Legendákat hallottam róla! Innen-onnan jöttek a hírek, hogy jó kezekben, 
                       igazán ütős fegyver, a harcsákkal szemben...
                     </div>
-                    <Link to="/blog1" onClick={(e) => { this.showOrHideComponent(e) }}>
+                    <Link to="/blog1" onClick={(e) => { this.showOrHideComponent(e)}}>
                       <div className="readMoreContent">{this.state.object.data.newsContent.readmore}</div>
                     </Link>
                   </div>

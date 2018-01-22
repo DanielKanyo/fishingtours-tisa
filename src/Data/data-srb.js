@@ -16,7 +16,7 @@ export const DataSrb = {
     },
     newsContent: {
       title: "Novo",
-      readmore: "Čitam..."
+      readmore: "Pročitam..."
     },
     sidebarContent: {
       title: "Info & Društvena medija"
@@ -28,7 +28,10 @@ export const DataSrb = {
       title: "Blog"
     },
     contactContent: {
-      title: "Kontact"
+      title: "Kontact",
+      address: "Zilahi Lajoša 1 / Magyarkanizsa, Srbija",
+      tel: "+381 63 8888773 / +36 20 2905247",
+      email: "jkanyo65@gmail.com"
     }
   }
 }
