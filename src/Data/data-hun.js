@@ -1,6 +1,6 @@
 export const DataHun = {
   data: {
-    menuItems: ["Kezdőlap", "Rólam", "Galéria", "Blog", "Kapcsolat"],
+    menuItems: ["Kezdőlap", "Rólam", "Galéria", "Blog", "Vendéghorgászat", "Kapcsolat"],
     title: "Horgásztúrák - Tisza",
     owner: "Kanyó János",
     aboutContent: {
@@ -32,6 +32,10 @@ export const DataHun = {
       address: "Zilahy Lajos 1 / Magyarkanizsa 24420, Szerbia",
       tel: "+381 63 8888773 / +36 20 2905247",
       email: "jkanyo65@gmail.com"
+    },
+    guestfishingContent: {
+      title: "Guest Fishing",
+      content_part1: "Kedves vendég horgász társaim, barátaim, uraim és hölgyeim!"
     }
   }
 }

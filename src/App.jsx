@@ -16,6 +16,7 @@ import Gallery from './Components/Gallery/Gallery';
 import Blog1 from './Components/Blog1/Blog1';
 import Contact from './Components/Contact/Contact';
 import Sidebar from './Components/Sidebar/Sidebar';
+import Guestfishing from './Components/Guestfishing/Guestfishing';
 
 let url = window.location.href;
 let display;
@@ -172,9 +173,15 @@ class App extends Component {
                   </div>
                 </li>
                 <li>
-                  <Link to="/contact" className="menuItem"
+                  <Link to="/guestfishing" className="menuItem"
                     onClick={(e) => { this.changeActiveComp(e); this.showOrHideComponent(e) }}>
                     {this.state.object.data.menuItems[4]}
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/contact" className="menuItem"
+                    onClick={(e) => { this.changeActiveComp(e); this.showOrHideComponent(e) }}>
+                    {this.state.object.data.menuItems[5]}
                   </Link>
                 </li>
                 <li onClick={(e) => this.changeLanguage(e)} className="language">HUN</li>
@@ -230,6 +237,7 @@ class App extends Component {
             <Route path="/about" render={() => <About objectProp={this.state.object} />} />
             <Route path="/gallery" render={() => <Gallery objectProp={this.state.object} />} />
             <Route path="/blog1" render={() => <Blog1 objectProp={this.state.object} />} />
+            <Route path="/guestfishing" render={() => <Guestfishing objectProp={this.state.object} />} />
             <Route path="/contact" render={() => <Contact objectProp={this.state.object} />} />
           </div>
         </Router>

@@ -1,6 +1,6 @@
 export const DataEng = {
   data: {
-    menuItems: ["Home", "About", "Gallery", "Blog", "Contact"],
+    menuItems: ["Home", "About", "Gallery", "Blog", "Guest Fishing" ,"Contact"],
     title: "Fishingtours - Tisa",
     owner: "Janos Kanyo",
     aboutContent: {
@@ -32,6 +32,16 @@ export const DataEng = {
       address: "Zilahy Lajos 1 / Magyarkanizsa 24420, Serbia",
       tel: "+381 63 8888773 / +36 20 2905247",
       email: "jkanyo65@gmail.com"
+    },
+    guestfishingContent: {
+      title: "Guest Fishing",
+      content_part1: "My dear guests in near future, anglers, fishermen, friends, ladies and gentlemen!",
+      content_part2: `Here is a chance for a good fishing, a great fishing tour! Whatever kind of fishing method you choose, I can help you! Rest assure that you will find a comfortable leisure and gather abundant experience in fishing. Maybe this time you'll catch a fish of a lifetime!? You don’t have to think about what, when and where, how to get equipment, baits or how to fit a fishing rod... You don’t need anything else, but to call me, harmonize your free time with me, come to Kanjiza, choose your favourite method of fishing, and you immediately can enjoy your hobby! If you want to try out new methods, for example: carbon- pole, or "Bologna"-rod, you don’t have to buy them... On my fishing seat box, with carbon- pole rod in your hand, I can provide you a complete relaxation. Of course, if you have favourite equipment of your own, you can bring that instead. You can choose on which water you want to go fishing. If you love natural waters, the river Tisa is the best choice (from the bank or by boat). Also, there is a lake and canal in Adorjan (this canal is connected with the lake Palic), lake on Velebit or a few canals nearby. If you want to visit some private lake in this area, which is rich in fish, it can also be solved. I can provide you with a daily license!`,
+      content_part3: "Offers and services:",
+      content_part4: "Fishing tours on the river Tisa, by boat:",
+      content_part5: ["Spin fishing (January - December)", "Deep-river fishing (April - October)", "Feeder fishing (March - October)"],
+      content_part6: "Fishing tours on the river Tisa, from the bank:",
+      content_part7: ["Spin fishing (January - December)", "Fishing with rod carbon-pole (March - October)", "Fishing with rod Bologna (March - October)", "Telescopic fishing (March - October)", "Deep-river fishing (April - October)", "Feeder fishing (March - October)"]
     }
   }
 }

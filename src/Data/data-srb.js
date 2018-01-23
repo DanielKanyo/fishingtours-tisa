@@ -1,6 +1,6 @@
 export const DataSrb = {
   data: {
-    menuItems: ["Početna", "O Meni", "Slike", "Blog", "Kontact"],
+    menuItems: ["Početna", "O Meni", "Slike", "Blog", "Pecanje U Gostima", "Kontact"],
     title: "Ribolovne Ture - Tisa",
     owner: "Janoš Kanjo",
     aboutContent: {
@@ -32,6 +32,9 @@ export const DataSrb = {
       address: "Zilahi Lajoša 1 / Kanjiža 24420, Srbija",
       tel: "+381 63 8888773 / +36 20 2905247",
       email: "jkanyo65@gmail.com"
+    },
+    guestfishingContent: {
+      title: "Guest Fishing"
     }
   }
 }
