@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
+import FontAwesome from 'react-fontawesome';
 /** style */
 import './App.css';
 /** data files */
@@ -99,12 +100,15 @@ class App extends Component {
 
     if (element.classList.value === "entryTitle" || element.classList.value === "entryDate") {
       element.parentNode.classList.add("active");
-      console.log(element.parentNode.parentNode.parentNode.children[0])
       element.parentNode.parentNode.parentNode.children[0].classList.add("active");
     } else {
-      element.classList.add("active");
+      if (element.parentNode.parentNode.children[0].text === "Blog") {
+        element.parentNode.parentNode.children[0].classList.add("active");
+        element.classList.add("active");
+      } else {
+        element.classList.add("active");
+      }
     }
-
   }
 
   handleChangeIndex = index => {
@@ -206,12 +210,17 @@ class App extends Component {
                     </div>
                     <div className="newsContent">
                       Pár évvel ezelőtt vettem először kezembe a „Glavinjar”-t, majd az idén már kipróbálásra is sor került.
-                      Legendákat hallottam róla! Innen-onnan jöttek a hírek, hogy jó kezekben, 
+                      Legendákat hallottam róla! Innen-onnan jöttek a hírek, hogy jó kezekben,
                       igazán ütős fegyver, a harcsákkal szemben...
                     </div>
-                    <Link to="/blog1" onClick={(e) => { this.showOrHideComponent(e)}}>
-                      <div className="readMoreContent">{this.state.object.data.newsContent.readmore}</div>
-                    </Link>
+                    <div className="readMoreContent">
+                      <Link to="/blog1" onClick={(e) => { this.showOrHideComponent(e) }}>
+                        <div className="readMoreText">
+                          <FontAwesome name="book" className="readMoreIcon" />
+                          {this.state.object.data.newsContent.readmore}
+                        </div>
+                      </Link>
+                    </div>
                   </div>
                 </div>
                 <Sidebar objectProp={this.state.object} />

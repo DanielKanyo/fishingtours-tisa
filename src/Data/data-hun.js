@@ -16,7 +16,7 @@ export const DataHun = {
     },
     newsContent: {
       title: "Újdonság",
-      readmore: "Elolvasom..."
+      readmore: "Elolvasom"
     },
     sidebarContent: {
       title: "Infó és Közösség"
@@ -29,7 +29,7 @@ export const DataHun = {
     },
     contactContent: {
       title: "Kapcsolat",
-      address: "Zilahy Lajos 1 / Magyarkanizsa, Szerbia",
+      address: "Zilahy Lajos 1 / Magyarkanizsa 24420, Szerbia",
       tel: "+381 63 8888773 / +36 20 2905247",
       email: "jkanyo65@gmail.com"
     }

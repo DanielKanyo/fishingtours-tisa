@@ -247,14 +247,35 @@ li.dropdown {
   margin: 8px 12px;
 }
 
-.newsContentWrapper a {
+.newsContentWrapper {
+  margin: 0px 8px ;
+  float: left;
+}
+
+.readMoreContent a {
   text-decoration: none;
+  color: white;
 }
 
 .readMoreContent {
   margin: 8px;
   background: #2da019;
-  padding: 8px 12px;
   border-radius: 4px;
   color: white;
+  width: calc(100% - 16px);
+  float: left;
+}
+
+.readMoreText {
+  padding: 8px 18px;
+  float: right;
+}
+
+.readMoreText:hover {
+  background: #36bd1e;
+  border-radius: 4px;
+}
+
+.readMoreIcon {
+  margin-right: 12px;
 }

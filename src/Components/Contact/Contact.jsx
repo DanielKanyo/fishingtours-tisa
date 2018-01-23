@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FacebookProvider, { Like } from 'react-facebook';
+import FontAwesome from 'react-fontawesome';
 /** components */
 import Sidebar from '../Sidebar/Sidebar';
 import MapContainer from '../Map/MapContainer';
@@ -20,18 +21,25 @@ class Contact extends Component {
           <div className="title contactTitle">{this.props.objectProp.data.contactContent.title}</div>
           <div className="contentWrapper contactContentWrapper">
             <div className="contactContent">
-              <div className="contactText">
-                {this.props.objectProp.data.owner}
+              <div className="contactContentTextContainer">
+                <div className="contactText">
+                  <FontAwesome name="circle-thin" className="contactIcon" />
+                  {this.props.objectProp.data.owner}
+                </div>
+                <div className="contactText">
+                  <FontAwesome name="circle-thin" className="contactIcon" />
+                  {this.props.objectProp.data.contactContent.address}
+                </div>
+                <div className="contactText">
+                  <FontAwesome name="circle-thin" className="contactIcon" />
+                  {this.props.objectProp.data.contactContent.tel}
+                </div>
+                <div className="contactText lastText">
+                  <FontAwesome name="circle-thin" className="contactIcon" />
+                  {this.props.objectProp.data.contactContent.email}
+                </div>
               </div>
-              <div className="contactText">
-                {this.props.objectProp.data.contactContent.address}
-              </div>
-              <div className="contactText">
-                {this.props.objectProp.data.contactContent.tel}
-              </div>
-              <div className="contactText lastText">
-                {this.props.objectProp.data.contactContent.email}
-              </div>
+
               <div className="map">
                 <MapContainer />
               </div>

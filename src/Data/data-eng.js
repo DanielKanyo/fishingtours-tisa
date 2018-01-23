@@ -16,7 +16,7 @@ export const DataEng = {
     },
     newsContent: {
       title: "News",
-      readmore: "Read more..."
+      readmore: "Read more"
     },
     sidebarContent: {
       title: "Info & Social"
@@ -29,7 +29,7 @@ export const DataEng = {
     },
     contactContent: {
       title: "Contact",
-      address: "Zilahy Lajos 1 / Magyarkanizsa, Serbia",
+      address: "Zilahy Lajos 1 / Magyarkanizsa 24420, Serbia",
       tel: "+381 63 8888773 / +36 20 2905247",
       email: "jkanyo65@gmail.com"
     }
