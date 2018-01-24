@@ -36,7 +36,7 @@ class App extends Component {
     this.state = {
       object: DataEng,
       index: 0,
-      dropdownMargin: -256,
+      dropdownMargin: -329,
       showOrHideNews: display
     }
     this.changeLanguage = this.changeLanguage.bind(this);
@@ -68,17 +68,17 @@ class App extends Component {
     if (elementText === "HUN") {
       this.setState({
         object: DataHun,
-        dropdownMargin: -281
+        dropdownMargin: -356
       });
     } else if (elementText === "ENG") {
       this.setState({
         object: DataEng,
-        dropdownMargin: -256
+        dropdownMargin: -329
       });
     } else {
       this.setState({
         object: DataSrb,
-        dropdownMargin: -264
+        dropdownMargin: -338
       });
     }
   }
@@ -143,23 +143,23 @@ class App extends Component {
                 <li>
                   <Link to="/" className="menuItem active"
                     onClick={(e) => { this.changeActiveComp(e); this.showOrHideComponent(e) }}>
-                    {this.state.object.data.menuItems[0]}
+                    <FontAwesome name="home" className="menuItemIcon" />{this.state.object.data.menuItems[0]}
                   </Link>
                 </li>
                 <li>
                   <Link to="/about" className="menuItem"
                     onClick={(e) => { this.changeActiveComp(e); this.showOrHideComponent(e) }}>
-                    {this.state.object.data.menuItems[1]}
+                    <FontAwesome name="user-circle-o" className="menuItemIcon" />{this.state.object.data.menuItems[1]}
                   </Link>
                 </li>
                 <li>
                   <Link to="/gallery" className="menuItem"
                     onClick={(e) => { this.changeActiveComp(e); this.showOrHideComponent(e) }}>
-                    {this.state.object.data.menuItems[2]}
+                    <FontAwesome name="picture-o" className="menuItemIcon" />{this.state.object.data.menuItems[2]}
                   </Link>
                 </li>
                 <li className="dropdown">
-                  <a className="dropbtn menuItem">Blog</a>
+                  <a className="dropbtn menuItem"><FontAwesome name="pencil" className="menuItemIcon" />Blog</a>
                   <div className="dropdown-content" style={{ marginLeft: this.state.dropdownMargin }}>
                     <Link to="/blog1" className="menuItem"
                       onClick={(e) => { this.changeActiveComp(e); this.showOrHideComponent(e) }}>
@@ -175,13 +175,13 @@ class App extends Component {
                 <li>
                   <Link to="/guestfishing" className="menuItem"
                     onClick={(e) => { this.changeActiveComp(e); this.showOrHideComponent(e) }}>
-                    {this.state.object.data.menuItems[4]}
+                    <FontAwesome name="anchor" className="menuItemIcon" />{this.state.object.data.menuItems[4]}
                   </Link>
                 </li>
                 <li>
                   <Link to="/contact" className="menuItem"
                     onClick={(e) => { this.changeActiveComp(e); this.showOrHideComponent(e) }}>
-                    {this.state.object.data.menuItems[5]}
+                    <FontAwesome name="address-card" className="menuItemIcon" />{this.state.object.data.menuItems[5]}
                   </Link>
                 </li>
                 <li onClick={(e) => this.changeLanguage(e)} className="language">HUN</li>

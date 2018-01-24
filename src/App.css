@@ -90,6 +90,10 @@ li.dropdown {
   display: block;
 }
 
+.menuItemIcon {
+  margin-right: 8px;
+}
+
 .entryTitle {
   float: left;
 }
@@ -258,7 +262,7 @@ li.dropdown {
 }
 
 .readMoreContent {
-  margin: 8px;
+  margin: 0px 8px 8px 8px;
   background: #2da019;
   border-radius: 4px;
   color: white;
