@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FacebookProvider, { Like } from 'react-facebook';
+import FontAwesome from 'react-fontawesome';
 /** components */
 import Sidebar from '../Sidebar/Sidebar';
 /** style */
@@ -16,7 +17,9 @@ class About extends Component {
     return (
       <div className="About">
         <div className="Content">
-          <div className="title aboutTitle">{this.props.objectProp.data.aboutContent.title}</div>
+          <div className="title aboutTitle">
+            <FontAwesome name="user-circle-o" className="titleIcon" />{this.props.objectProp.data.aboutContent.title}
+          </div>
           <div className="contentWrapper aboutContentWrapper">
             <div className="compContent aboutContent">{this.props.objectProp.data.aboutContent.content_part1}</div>
             <div className="compContent aboutContent">{this.props.objectProp.data.aboutContent.content_part2}</div>

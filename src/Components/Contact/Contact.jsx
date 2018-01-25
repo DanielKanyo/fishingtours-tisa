@@ -18,33 +18,18 @@ class Contact extends Component {
     return (
       <div className="Contact">
         <div className="Content">
-          <div className="title contactTitle">{this.props.objectProp.data.contactContent.title}</div>
+          <div className="title contactTitle">
+            <FontAwesome name="address-card" className="titleIcon" />{this.props.objectProp.data.contactContent.title}
+          </div>
           <div className="contentWrapper contactContentWrapper">
             <div className="contactContent">
               <div className="contactContentTextContainer">
-
-
-              <ul>
-                {this.props.objectProp.data.contactContent.info.map(function (listValue, i) {
-                  return <li key={i}>{listValue}</li>;
-                })}
-              </ul>
-
-
-                {/* <div className="contactText">
-                  {this.props.objectProp.data.owner}
-                </div>
-                <div className="contactText">
-                  {this.props.objectProp.data.contactContent.address}
-                </div>
-                <div className="contactText">
-                  {this.props.objectProp.data.contactContent.tel}
-                </div>
-                <div className="contactText lastText">
-                  {this.props.objectProp.data.contactContent.email}
-                </div> */}
+                <ul>
+                  {this.props.objectProp.data.contactContent.info.map(function (listValue, i) {
+                    return <li key={i}>{listValue}</li>;
+                  })}
+                </ul>
               </div>
-
               <div className="map">
                 <MapContainer />
               </div>

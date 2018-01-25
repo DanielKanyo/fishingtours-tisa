@@ -211,7 +211,9 @@ class App extends Component {
             <div style={{ display: this.state.showOrHideNews }}>
               <div className="News">
                 <div className="Content">
-                  <div className="title aboutTitle">{this.state.object.data.newsContent.title}</div>
+                  <div className="title aboutTitle">
+                    <FontAwesome name="newspaper-o" className="titleIcon" />{this.state.object.data.newsContent.title}
+                  </div>
                   <div className="contentWrapper newsContentWrapper">
                     <div className="newsTitle">
                       A "Glavinjar" - vertikális mű csali - 1. rész

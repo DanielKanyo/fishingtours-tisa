@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FacebookProvider, { Like } from 'react-facebook';
+import FontAwesome from 'react-fontawesome';
 /** style */
 import './Guestfishing.css';
 /** component */
@@ -16,7 +17,9 @@ class Guestfishing extends Component {
     return (
       <div className="Guestfishing">
         <div className="Content">
-          <div className="title guestfishingTitle">{this.props.objectProp.data.guestfishingContent.title}</div>
+          <div className="title guestfishingTitle">
+            <FontAwesome name="anchor" className="titleIcon" />{this.props.objectProp.data.guestfishingContent.title}
+          </div>
           <div className="contentWrapper guestfishingContentWrapper">
             <div className="compContent guestfishingContent">
               <b>{this.props.objectProp.data.guestfishingContent.content_part1}</b>

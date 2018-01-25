@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import FacebookProvider, { Like } from 'react-facebook';
+import FontAwesome from 'react-fontawesome';
 /** style */
 import './Blog1.css';
 /** components */
@@ -16,7 +17,9 @@ class Blog1 extends Component {
     return (
       <div className="Blog">
         <div className="Content">
-          <div className="title blogTitle">{this.props.objectProp.data.blogContent.title}</div>
+          <div className="title blogTitle">
+            <FontAwesome name="pencil" className="titleIcon" />{this.props.objectProp.data.blogContent.title}
+          </div>
           <div className="contentWrapper blogContentWrapper">
             <div className="blogContentTitle">
               A "Glavinjar" - vertikális mű csali - 1. rész

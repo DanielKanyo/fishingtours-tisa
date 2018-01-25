@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import GalleryGrid from 'react-grid-gallery';
 import FacebookProvider, { Like } from 'react-facebook';
+import FontAwesome from 'react-fontawesome';
 /** components */
 import Sidebar from '../Sidebar/Sidebar';
 /** style */
@@ -64,7 +65,9 @@ class Gallery extends Component {
     return (
       <div className="Gallery">
         <div className="Content">
-          <div className="title galleryTitle">{this.props.objectProp.data.galleryContent.title}</div>
+          <div className="title galleryTitle">
+            <FontAwesome name="picture-o" className="titleIcon" />{this.props.objectProp.data.galleryContent.title}
+          </div>
           <div className="contentWrapper galleryContentWrapper">
             <GalleryGrid images={IMAGES} backdropClosesModal={true} enableKeyboardInput={true} />
 

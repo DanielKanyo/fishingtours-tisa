@@ -14,7 +14,9 @@ class Sidebar extends Component {
   render() {
     return (
       <div className="Sidebar">
-        <div className="title sidebarTitle">{this.props.objectProp.data.sidebarContent.title}</div>
+        <div className="title sidebarTitle">
+          <FontAwesome name="info" className="titleIcon" />{this.props.objectProp.data.sidebarContent.title}
+        </div>
         <div className="sidebarContent">
           <div className="sidebarContact">
             <div>
