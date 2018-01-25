@@ -41,7 +41,7 @@ export const DataHun = {
       content_part6: "Tiszai horgásztúrák, partról:",
       content_part7: ["Pergető horgászat (január - december)", "Rakós botos horgászat (március - október)", "Bolognai horgászat (március - október)", "Spicc botos horgászat (március - október)", "Fenekező horgászat (április - október)", "Feeder botos horgászat (március - október)"],
       content_part8: "Magánkézben levő tavak:",
-      content_part9: ["Bojlis horgászat (március - október)", "Pergető horgászat (január - december)", "Rakós botos horgászat (március – október)", "Match botos horgászat (március - október)", "Bolognai horgászat (március - október)", "Spicc botos horgászat (március - október)", "Fenekező horgászat (március - október)", "Feeder botos horgászat (március - október))"],
+      content_part9: ["Bojlis horgászat (március - október)", "Pergető horgászat (január - december)", "Rakós botos horgászat (március – október)", "Match botos horgászat (március - október)", "Bolognai horgászat (március - október)", "Spicc botos horgászat (március - október)", "Fenekező horgászat (március - október)", "Feeder botos horgászat (március - október)"],
       content_part10: "Horgásztúrák professzionális vezetővel:",
       content_part11: "Horgásztúra - a csomag tartalmaz: professzionális csónak és vezető, üzemanyag, engedély - napijegy (ha a személynek vagy személyeknek van érvényes horgászengedélyük, akkor azt az árból levonjuk), horgászbotok, csali, felszerelés – pl. szék, láda, bottartó és kisegítő apró kellékek.",
       content_part12: ["Horgásztúra - fél napra (6 óra) 1 személyre", "3.600 din"],

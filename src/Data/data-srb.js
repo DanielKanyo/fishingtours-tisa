@@ -32,7 +32,33 @@ export const DataSrb = {
       info: ["Kanjo Janoš", "Zilahi Lajoša 1 / Kanjiža 24420, Srbija", "+381 63 8888773 / +36 20 2905247", "jkanyo65@gmail.com"]
     },
     guestfishingContent: {
-      title: "Guest Fishing"
+      title: "Pecanje U Gostima",
+      content_part1: "Dragi moji budući gosti, ribolovci, pecaroši, prijatelji, dame i gospodo!",
+      content_part2: `Ovde je šansa za jedno dobro druženje i pecanje - ribolovačku turu! Bilo koju metodu ribolova da izaberite, mogu da vam pomognem. Možete biti sigurni da ćete naći udobnu razonodu i sakupićete  bogato iskustvo pri pecanju. Možda ćete baš sada uhvatiti ribu svoga života! Ne morate da se pitate šta, kada i gde!? Ne morate da nabavljate pribore, mamce, ili da opremate štap za pecanje... Ne treba ništa drugo da učinite, osim da me nazovete, uskladite samnom vaše slobodno vreme, dođete u Kanjižu, izaberete vašu omiljenu metodu ribolova i odmah možete da uživate u vašem hobiju! Ako bi zaželeli da isprobate nove metode npr. štek-direktaš, ili štap “Bolonjez”, ne treba da  ih kupujete. Na mojem takmičarskom stolcu, sa štek štapom u ruci, obezbeđujem vam potpunu relaksaciju. Naravno, ako vi imate svoj omiljeni pribor, onda taj donesite. Možete sami izabrati vodu gde želite ići na pecanje! Ako volite prirodne vode, onda je reka Tisa pravo mesto za Vas (sa obale ili čamcem). Tu su jezero i kanal u Adorjanu (kanal koji privezuje Tisu sa jezerom Palić), jezero na Velebitu i  kanali u okolini. Naravno, ako želite posetiti privatna jezera u okolini (revire), koja su bogata ribom, i to možemo rešiti- obezbediću vam dnevnu dozvolu!`,
+      content_part3: "Ponude i usluge:",
+      content_part4: "Ribolovačke ture na reci Tisi, čamcem:",
+      content_part5: ["Varaličanje (januar - decembar)", "Dubinski ribolov (april - oktobar)", "Fider-ribolov (mart - oktobar)"],
+      content_part6: "Ribolovačke ture na reci Tisi, sa obale:",
+      content_part7: ["Varaličanje (januar - decembar)", "Ribolov sa štek štapom (mart - oktobar)", `Ribolov sa "Bolonjez" štapom (mart - oktobar)`, "Ribolov špic-direktaš štapom (mart - oktobar)", "Dubinski ribolov (april - oktobar)", "Fider-ribolov (mart - oktobar)"],
+      content_part8: "Privatna jezera:",
+      content_part9: ["Šaranski ribolov- na boili (mart - oktobar)", "Varaličanje (januar - decembar)", "Ribolov sa štek štapom (mart - oktobar)", "Ribolov Match štapom (mart - oktobar)", `Ribolov sa "Bolonjez" štapom (mart - oktobar)`, "Ribolov špic-direktaš štapom (mart - oktobar)", "Dubinski ribolov (mart - oktobar)", "Fider-ribolov (mart - oktobar)"],
+      content_part10: "Ribolovačke ture s profesionalnim vodičem:",
+      content_part11: "Ribolovačke ture-paket, sadrži: ekskluzivni čamac, usluge profesionalnog vodiča, gorivo, dnevna dozvola, pribor, mamce- npr. specijalna štek stolica, kutije, držači za štapove i razne sitnice... (Ako već posedujete važeću dozvolu, cena usluge se snižava za taj iznos).",
+      content_part12: ["Ribolovačka tura - pola dana (6 časova) za 1 osobu", "3.600 din"],
+      content_part13: ["Ribolovačka tura - pola dana (6 časova) za 2 osobu", "4.800 din"],
+      content_part14: ["Ribolovačka tura - pola dana (12 časova) za 1 osobu", "6.000 din"],
+      content_part15: ["Ribolovačka tura - pola dana (12 časova) za 2 osobu", "7.200 din"],
+      content_part16: "Izlet čamcem:",
+      content_part17: `Ako neko ne želi da ide na pecanje, samo voli lepotu Tise i prirodu, a ima čežnju za izletom u  čamcu, tu je jedinstvena prilika! Može da pogleda najlepše krajeve Kanjiže, izbliza se divi cvetanju Tise, da se vozi čamcem do sela Martonoš (do velikog-"Majmunskog" ostrva). Postoji mogućnost i da se vozi u suprotnom smeru, prema Novog Kneževca, prema drugom ostrvu i niže do sela Adorjan. Nema lepšeg ugođaja od vožnje na vodi, udisanja svežeg vazduha i divljenja lepoti koju je priroda stvorila!`,
+      content_part18: "Izlet čamcem- paket sadrži:",
+      content_part19: "Ekskluzivni čamac i usluge profesionalnog vodiča, gorivo i prsluk za spasavanje.",
+      content_part20: ["Turistička vožnja čamcem za 1 osobu, 1 čas", "400 din"],
+      content_part21: ["Turistička vožnja čamcem za 2 osobu, 1 čas", "600 din"],
+      content_part22: ["Turistička vožnja čamcem za 3 osobu, 1 čas", "700 din"],
+      content_part23: ["Turistička vožnja čamcem za 4 osobu, 1 čas", "800 din"],
+
+      content_part24: "Jezera i kanali:",
+      content_part25: ["Varaličanje (januar - decembar)", "Ribolov sa štek  štapom (mart - oktobar)", "Ribolov Match štapom (mart - oktobar)", `Ribolov sa "Bolonjez" štapom (mart - oktobar)`, "Ribolov špic-direktaš štapom (mart - oktobar)", "Dubinski ribolov (mart - oktobar)", "Fider-ribolov (mart - oktobar)"]
     }
   }
 }
