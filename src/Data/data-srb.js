@@ -22,7 +22,8 @@ export const DataSrb = {
       title: "Info & Društvena medija"
     },
     galleryContent: {
-      title: "Slike"
+      title: "Slike",
+      album: ["Ulovi", "Priroda Fotografije", "Gosti", "Ribolovsko Takmičenje"]
     },
     blogContent: {
       title: "Blog"
@@ -56,7 +57,6 @@ export const DataSrb = {
       content_part21: ["Turistička vožnja čamcem za 2 osobu, 1 čas", "600 din"],
       content_part22: ["Turistička vožnja čamcem za 3 osobu, 1 čas", "700 din"],
       content_part23: ["Turistička vožnja čamcem za 4 osobu, 1 čas", "800 din"],
-
       content_part24: "Jezera i kanali:",
       content_part25: ["Varaličanje (januar - decembar)", "Ribolov sa štek  štapom (mart - oktobar)", "Ribolov Match štapom (mart - oktobar)", `Ribolov sa "Bolonjez" štapom (mart - oktobar)`, "Ribolov špic-direktaš štapom (mart - oktobar)", "Dubinski ribolov (mart - oktobar)", "Fider-ribolov (mart - oktobar)"]
     }

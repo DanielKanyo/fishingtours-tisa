@@ -22,7 +22,8 @@ export const DataHun = {
       title: "Infó és Közösség"
     },
     galleryContent: {
-      title: "Galéria"
+      title: "Galéria",
+      album: ["Fogásaim", "Természetfotók", "Vendégek", "Versenyhorgászat"]
     },
     blogContent: {
       title: "Blog"
@@ -56,7 +57,6 @@ export const DataHun = {
       content_part21: ["Turisztikai csónakázás, 2 személyre, 1 óra", "600 din"],
       content_part22: ["Turisztikai csónakázás, 3 személyre, 1 óra", "700 din"],
       content_part23: ["Turisztikai csónakázás, 4 személyre, 1 óra", "800 din"],
-
       content_part24: "Tavak, csatornák és kanálisok:",
       content_part25: ["Pergető horgászat (január - december)", "Rakós botos horgászat (március - október)", "Match botos horgászat (március - október)", "Bolognai horgászat (március - október)", "Spicc botos horgászat (március - október)", "Fenekező horgászat (március - október)", "Feeder botos horgászat (március - október)"]
     }

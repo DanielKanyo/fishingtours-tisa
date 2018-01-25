@@ -20,7 +20,7 @@
 }
 
 .galleryContentWrapper {
-  height: 414px;
+  height: 690px;
   padding: 8px;
 }
 
@@ -30,4 +30,23 @@
   margin-top: 8px;
   width: 100%;
   float: left;
+}
+
+.albumTitle {
+  padding: 4px 0px 8px 15px;
+  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  margin-bottom: 8px;
+}
+
+#myCatchesGallery {
+  height: 368px;
+}
+
+#naturePhotosGallery {
+  height: 184px;
+}
+
+.naturePhotos {
+  clear: both;
+  margin-top: 8px;
 }

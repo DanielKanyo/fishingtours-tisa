@@ -22,7 +22,8 @@ export const DataEng = {
       title: "Info & Social"
     },
     galleryContent: {
-      title: "Gallery"
+      title: "Gallery",
+      album: ["My Catches", "Nature Photos", "Guests", "Fishing Competition"]
     },
     blogContent: {
       title: "Blog"
@@ -56,7 +57,6 @@ export const DataEng = {
       content_part21: ["Tourist boat trip for 2 persons, 1 hour", "600 din"],
       content_part22: ["Tourist boat trip for 3 persons, 1 hour", "700 din"],
       content_part23: ["Tourist boat trip for 4 persons, 1 hour", "800 din"],
-
       content_part24: "Lakes and canals:",
       content_part25: ["Spin fishing (January - December)", "Fishing with rod carbon-pole (March – October)", "Fishing with rod Match (March – October)", "Fishing with rod Bologna (March – October)", "Telescopic fishing (March – October)", "Deep-river fishing (April – October)", "Feeder fishing (March – October)"]
     }
