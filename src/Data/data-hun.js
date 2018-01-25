@@ -33,7 +33,32 @@ export const DataHun = {
     },
     guestfishingContent: {
       title: "Guest Fishing",
-      content_part1: "Kedves vendég horgász társaim, barátaim, uraim és hölgyeim!"
+      content_part1: "Kedves vendég horgász társaim, barátaim, uraim és hölgyeim!",
+      content_part2: `Itt a lehetőség egy jó horgászkalandra, egy horgásztúrára! Bármely horgász módszert választja, tudok segíteni. Biztos lehet benne, hogy kényelmes, élmény dús időtöltésben lesz része. Lehet, hogy pont most fogja meg élete halát! Nem kell azon töprengenie, hogy miket, mikor, hol szerezzen be. Hogyan szerelje fel horgászbotját. Nem kell mást tennie csak eljönni Magyarkanizsára. Az ön legkedvesebb horgászmódszerét kiválasztani, velem egyeztetni és máris kedvenc hobbijának élhet. Akkor se csüggedjen, ha nincs felszerelése, csalija. Esetleg ki szeretné próbálni a rakós botot, vagy a bolognait, nem kell hozzá botot vennie! Az én versenyszékemen, a rakós botommal a kezében, biztosíthatom a teljes kikapcsolódást. Persze ha önnek van kedvenc felszerelése, akkor hozza magával. Kiválaszthatja, azt a vizet, ahol horgászni akar, ha természetes vizeket szereti, akkor a Tiszát (partról vagy csónakos horgászat), Adorjánt (tó vagy Tisza - Palics csatorna), Velebiti – tavat, vagy a környező kanálisokat, csatornákat. De ha magánkézben levő tóra vágyna, melyek, gazdagok halban, azt is megoldjuk. Biztosítom az engedélyt, napijegyet.`,
+      content_part3: "Ajánlatok és szolgáltatások:",
+      content_part4: "Tiszai horgásztúrák, csónakos:",
+      content_part5: ["Pergető horgászat (január - december)", "Fenekező horgászat (április - október)", "Feederes horgászat (március - október)"],
+      content_part6: "Tiszai horgásztúrák, partról:",
+      content_part7: ["Pergető horgászat (január - december)", "Rakós botos horgászat (március - október)", "Bolognai horgászat (március - október)", "Spicc botos horgászat (március - október)", "Fenekező horgászat (április - október)", "Feeder botos horgászat (március - október)"],
+      content_part8: "Magánkézben levő tavak:",
+      content_part9: ["Bojlis horgászat (március - október)", "Pergető horgászat (január - december)", "Rakós botos horgászat (március – október)", "Match botos horgászat (március - október)", "Bolognai horgászat (március - október)", "Spicc botos horgászat (március - október)", "Fenekező horgászat (március - október)", "Feeder botos horgászat (március - október))"],
+      content_part10: "Horgásztúrák professzionális vezetővel:",
+      content_part11: "Horgásztúra - a csomag tartalmaz: professzionális csónak és vezető, üzemanyag, engedély - napijegy (ha a személynek vagy személyeknek van érvényes horgászengedélyük, akkor azt az árból levonjuk), horgászbotok, csali, felszerelés – pl. szék, láda, bottartó és kisegítő apró kellékek.",
+      content_part12: ["Horgásztúra - fél napra (6 óra) 1 személyre", "3.600 din"],
+      content_part13: ["Horgásztúra - fél napra (6 óra) 2 személyre", "4.800 din"],
+      content_part14: ["Horgásztúra - egész napra (12 óra) 1 személyre", "6.000 din"],
+      content_part15: ["Horgásztúra - egész napra (12 óra) 2 személyre", "7.200 din"],
+      content_part16: "Tiszai csónakázás:",
+      content_part17: `Ha valaki nem akar horgászni, csak szereti a Tiszát, a természetet és egy csónakázásra vágyik itt a lehetőség. Megtekintheti Magyarkanizsa legszebb tájait, megnézheti a Tisza virágzást közelről, felcsónakázhat megkerülve a „majomszigetet” fel Martonosig, de lehetőség van a másik irányba, Törökkanizsa felé, a másik szigetig, vagy le Adorjánig. Vízen járni, friss levegőt szívni, megcsodálni a természet alkotta világunkat.`,
+      content_part18: "Csónakázás - a csomag tartalmaz:",
+      content_part19: "Professzionális csónak és vezető, üzemanyag, mentő mellény.",
+      content_part20: ["Turisztikai csónakázás, 1 személyre, 1 óra", "400 din"],
+      content_part21: ["Turisztikai csónakázás, 2 személyre, 1 óra", "600 din"],
+      content_part22: ["Turisztikai csónakázás, 3 személyre, 1 óra", "700 din"],
+      content_part23: ["Turisztikai csónakázás, 4 személyre, 1 óra", "800 din"],
+
+      content_part24: "Tavak, csatornák és kanálisok:",
+      content_part25: ["Pergető horgászat (január - december)", "Rakós botos horgászat (március - október)", "Match botos horgászat (március - október)", "Bolognai horgászat (március - október)", "Spicc botos horgászat (március - október)", "Fenekező horgászat (március - október)", "Feeder botos horgászat (március - október)"]
     }
   }
 }

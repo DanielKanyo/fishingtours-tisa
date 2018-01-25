@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FacebookProvider, { Like } from 'react-facebook';
 /** style */
 import './Guestfishing.css';
 /** component */
@@ -47,6 +48,16 @@ class Guestfishing extends Component {
               </ul>
             </div>
             <div className="compContent guestfishingContent">
+              {this.props.objectProp.data.guestfishingContent.content_part24}
+            </div>
+            <div className="compContent guestfishingContent">
+              <ul>
+                {this.props.objectProp.data.guestfishingContent.content_part25.map(function (listValue, i) {
+                  return <li key={i}>{listValue}</li>;
+                })}
+              </ul>
+            </div>
+            <div className="compContent guestfishingContent">
               {this.props.objectProp.data.guestfishingContent.content_part8}
             </div>
             <div className="compContent guestfishingContent">
@@ -63,7 +74,6 @@ class Guestfishing extends Component {
               {this.props.objectProp.data.guestfishingContent.content_part11}
             </div>
             <div className="compContent guestfishingContent">
-
               <table>
                 <tbody>
                   <tr>
@@ -88,8 +98,53 @@ class Guestfishing extends Component {
                   </tr>
                 </tbody>
               </table>
-
             </div>
+            <div className="compContent guestfishingContent">
+              <b>{this.props.objectProp.data.guestfishingContent.content_part16}</b>
+            </div>
+            <div className="compContent guestfishingContent">
+              {this.props.objectProp.data.guestfishingContent.content_part17}
+            </div>
+            <div className="compContent guestfishingContent">
+              <b>{this.props.objectProp.data.guestfishingContent.content_part18}</b>
+            </div>
+            <div className="compContent guestfishingContent">
+              {this.props.objectProp.data.guestfishingContent.content_part19}
+            </div>
+
+            <div className="compContent guestfishingContent">
+              <table>
+                <tbody>
+                  <tr>
+                    {this.props.objectProp.data.guestfishingContent.content_part20.map(function (listValue, i) {
+                      return <td key={i}>{listValue}</td>;
+                    })}
+                  </tr>
+                  <tr>
+                    {this.props.objectProp.data.guestfishingContent.content_part21.map(function (listValue, i) {
+                      return <td key={i}>{listValue}</td>;
+                    })}
+                  </tr>
+                  <tr>
+                    {this.props.objectProp.data.guestfishingContent.content_part22.map(function (listValue, i) {
+                      return <td key={i}>{listValue}</td>;
+                    })}
+                  </tr>
+                  <tr>
+                    {this.props.objectProp.data.guestfishingContent.content_part23.map(function (listValue, i) {
+                      return <td key={i}>{listValue}</td>;
+                    })}
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div className="contentSocialFooter guestfishingFooter">
+              <FacebookProvider appId="320234841816215">
+                <Like href="http://fishingtours-tisa/guestfishing" action="recommend" layout="button_count" share />
+              </FacebookProvider>
+            </div>
+
           </div>
         </div>
         <Sidebar objectProp={this.props.objectProp} />

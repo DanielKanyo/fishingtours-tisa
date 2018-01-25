@@ -49,3 +49,24 @@
   list-style-position: inside;
   margin-left: 15px;
 }
+
+.Guestfishing table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.Guestfishing td {
+  padding: 4px 8px;
+}
+
+.Guestfishing tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+.Guestfishing td:nth-child(even) {
+  text-align: right;
+}
+
+.guestfishingFooter {
+  margin: 4px 8px 8px 8px;
+}
