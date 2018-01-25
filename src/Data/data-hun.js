@@ -29,9 +29,7 @@ export const DataHun = {
     },
     contactContent: {
       title: "Kapcsolat",
-      address: "Zilahy Lajos 1 / Magyarkanizsa 24420, Szerbia",
-      tel: "+381 63 8888773 / +36 20 2905247",
-      email: "jkanyo65@gmail.com"
+      info: ["Kanyó János", "Zilahy Lajos 1 / Magyarkanizsa 24420, Szerbia", "+381 63 8888773 / +36 20 2905247", "jkanyo65@gmail.com"]
     },
     guestfishingContent: {
       title: "Guest Fishing",

@@ -46,6 +46,50 @@ class Guestfishing extends Component {
                 })}
               </ul>
             </div>
+            <div className="compContent guestfishingContent">
+              {this.props.objectProp.data.guestfishingContent.content_part8}
+            </div>
+            <div className="compContent guestfishingContent">
+              <ul>
+                {this.props.objectProp.data.guestfishingContent.content_part9.map(function (listValue, i) {
+                  return <li key={i}>{listValue}</li>;
+                })}
+              </ul>
+            </div>
+            <div className="compContent guestfishingContent">
+              <b>{this.props.objectProp.data.guestfishingContent.content_part10}</b>
+            </div>
+            <div className="compContent guestfishingContent">
+              {this.props.objectProp.data.guestfishingContent.content_part11}
+            </div>
+            <div className="compContent guestfishingContent">
+
+              <table>
+                <tbody>
+                  <tr>
+                    {this.props.objectProp.data.guestfishingContent.content_part12.map(function (listValue, i) {
+                      return <td key={i}>{listValue}</td>;
+                    })}
+                  </tr>
+                  <tr>
+                    {this.props.objectProp.data.guestfishingContent.content_part13.map(function (listValue, i) {
+                      return <td key={i}>{listValue}</td>;
+                    })}
+                  </tr>
+                  <tr>
+                    {this.props.objectProp.data.guestfishingContent.content_part14.map(function (listValue, i) {
+                      return <td key={i}>{listValue}</td>;
+                    })}
+                  </tr>
+                  <tr>
+                    {this.props.objectProp.data.guestfishingContent.content_part15.map(function (listValue, i) {
+                      return <td key={i}>{listValue}</td>;
+                    })}
+                  </tr>
+                </tbody>
+              </table>
+
+            </div>
           </div>
         </div>
         <Sidebar objectProp={this.props.objectProp} />

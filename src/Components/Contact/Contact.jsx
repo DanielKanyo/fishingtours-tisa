@@ -22,22 +22,27 @@ class Contact extends Component {
           <div className="contentWrapper contactContentWrapper">
             <div className="contactContent">
               <div className="contactContentTextContainer">
-                <div className="contactText">
-                  <FontAwesome name="circle-thin" className="contactIcon" />
+
+
+              <ul>
+                {this.props.objectProp.data.contactContent.info.map(function (listValue, i) {
+                  return <li key={i}>{listValue}</li>;
+                })}
+              </ul>
+
+
+                {/* <div className="contactText">
                   {this.props.objectProp.data.owner}
                 </div>
                 <div className="contactText">
-                  <FontAwesome name="circle-thin" className="contactIcon" />
                   {this.props.objectProp.data.contactContent.address}
                 </div>
                 <div className="contactText">
-                  <FontAwesome name="circle-thin" className="contactIcon" />
                   {this.props.objectProp.data.contactContent.tel}
                 </div>
                 <div className="contactText lastText">
-                  <FontAwesome name="circle-thin" className="contactIcon" />
                   {this.props.objectProp.data.contactContent.email}
-                </div>
+                </div> */}
               </div>
 
               <div className="map">

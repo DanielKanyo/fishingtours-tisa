@@ -102,14 +102,15 @@ class App extends Component {
     if (element.classList.value === "entryTitle" || element.classList.value === "entryDate") {
       element.parentNode.classList.add("active");
       element.parentNode.parentNode.parentNode.children[0].classList.add("active");
+    } else if (element.parentNode.parentNode.children[0].text === "Blog") {
+      element.parentNode.parentNode.children[0].classList.add("active");
+      element.classList.add("active");
+    } else if (element.classList[0] === "fa") {
+      element.parentNode.classList.add("active");
     } else {
-      if (element.parentNode.parentNode.children[0].text === "Blog") {
-        element.parentNode.parentNode.children[0].classList.add("active");
-        element.classList.add("active");
-      } else {
-        element.classList.add("active");
-      }
+      element.classList.add("active");
     }
+
   }
 
   handleChangeIndex = index => {
@@ -121,7 +122,7 @@ class App extends Component {
   showOrHideComponent(e) {
     let element = e.target;
 
-    if (element.text === "Home" || element.text === "Kezdőlap" || element.text === "Početna") {
+    if (element.text === "Home" || element.text === "Kezdőlap" || element.text === "Početna" || element.classList[0] === "fa") {
       this.setState({
         showOrHideNews: "block"
       });

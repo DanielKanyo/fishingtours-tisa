@@ -29,9 +29,7 @@ export const DataEng = {
     },
     contactContent: {
       title: "Contact",
-      address: "Zilahy Lajos 1 / Magyarkanizsa 24420, Serbia",
-      tel: "+381 63 8888773 / +36 20 2905247",
-      email: "jkanyo65@gmail.com"
+      info: ["Janos Kanyo", "Zilahy Lajos 1 / Magyarkanizsa 24420, Serbia", "+381 63 8888773 / +36 20 2905247", "jkanyo65@gmail.com"]
     },
     guestfishingContent: {
       title: "Guest Fishing",
@@ -41,7 +39,16 @@ export const DataEng = {
       content_part4: "Fishing tours on the river Tisa, by boat:",
       content_part5: ["Spin fishing (January - December)", "Deep-river fishing (April - October)", "Feeder fishing (March - October)"],
       content_part6: "Fishing tours on the river Tisa, from the bank:",
-      content_part7: ["Spin fishing (January - December)", "Fishing with rod carbon-pole (March - October)", "Fishing with rod Bologna (March - October)", "Telescopic fishing (March - October)", "Deep-river fishing (April - October)", "Feeder fishing (March - October)"]
+      content_part7: ["Spin fishing (January - December)", "Fishing with rod carbon-pole (March - October)", "Fishing with rod Bologna (March - October)", "Telescopic fishing (March - October)", "Deep-river fishing (April - October)", "Feeder fishing (March - October)"],
+      content_part8: "Private lakes:",
+      content_part9: ["Carp-fishing with boilie (March - October)", "Spin fishing (January - December)", "Fishing with rod carbon-pole (March - October)", "Fishing with rod Match (March - October)", "Fishing with rod Bologna (March - October)", "Telescopic fishing (March - October)", "Deep-river fishing (April - October)", "Feeder fishing (March - October)"],
+      content_part10: "Fishing tours with a professional guide:",
+      content_part11: "Fishing tour-package includes: exclusive boat, services of a professional guide, fuel, daily license, equipment, baits... - eg. Special fishing seat box, boxes, holders for rods and various little things... (If you already have a valid fishing-permit, it lowers the cost of services for that amount).",
+      content_part12: ["Fishing tour - half a day (6 hours) for 1 person", "3.600 din"],
+      content_part13: ["Fishing tour - half a day (6 hours) for 2 persons", "4.800 din"],
+      content_part14: ["Fishing tour - the whole day (12 hours) for 1 person", "6.000 din"],
+      content_part15: ["Fishing tour - the whole day (12 hours) for 2 persons", "7.200 din"],
+      
     }
   }
 }

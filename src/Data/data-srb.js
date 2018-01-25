@@ -29,9 +29,7 @@ export const DataSrb = {
     },
     contactContent: {
       title: "Kontact",
-      address: "Zilahi Lajoša 1 / Kanjiža 24420, Srbija",
-      tel: "+381 63 8888773 / +36 20 2905247",
-      email: "jkanyo65@gmail.com"
+      info: ["Kanjo Janoš", "Zilahi Lajoša 1 / Kanjiža 24420, Srbija", "+381 63 8888773 / +36 20 2905247", "jkanyo65@gmail.com"]
     },
     guestfishingContent: {
       title: "Guest Fishing"
