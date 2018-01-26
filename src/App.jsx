@@ -122,7 +122,9 @@ class App extends Component {
   showOrHideComponent(e) {
     let element = e.target;
 
-    if (element.text === "Home" || element.text === "Kezdőlap" || element.text === "Početna" || element.classList[0] === "fa") {
+    console.log(element.classList[1])
+
+    if (element.text === "Home" || element.text === "Kezdőlap" || element.text === "Početna" || element.classList[1] === "fa-home") {
       this.setState({
         showOrHideNews: "block"
       });
