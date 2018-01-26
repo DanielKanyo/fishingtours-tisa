@@ -23,10 +23,11 @@ export const DataSrb = {
     },
     galleryContent: {
       title: "Slike",
-      album: ["Ulovi", "Priroda Fotografije", "Gosti", "Ribolovsko Takmičenje"]
+      album: ["Ulovi", "Fotografije o Prirodi", "Gosti", "Ribolovsko Takmičenje"]
     },
     blogContent: {
-      title: "Blog"
+      title: "Blog",
+      availableText: "Dostupno je samo na mađarskom..."
     },
     contactContent: {
       title: "Kontact",

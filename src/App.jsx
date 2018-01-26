@@ -42,6 +42,7 @@ class App extends Component {
     this.changeLanguage = this.changeLanguage.bind(this);
     this.changeActiveComp = this.changeActiveComp.bind(this);
     this.showOrHideComponent = this.showOrHideComponent.bind(this);
+    this.addBlogActive = this.addBlogActive.bind(this);
   }
 
   //change language, buttons backgroung color and the dataobject source
@@ -122,8 +123,6 @@ class App extends Component {
   showOrHideComponent(e) {
     let element = e.target;
 
-    console.log(element.classList[1])
-
     if (element.text === "Home" || element.text === "Kezdőlap" || element.text === "Početna" || element.classList[1] === "fa-home") {
       this.setState({
         showOrHideNews: "block"
@@ -133,6 +132,16 @@ class App extends Component {
         showOrHideNews: "none"
       })
     }
+  }
+
+  addBlogActive() {
+    let blogMenuItem = document.getElementById("blogMenuItem");
+    let menuItems = document.getElementsByClassName("menuItem");
+
+    for (let i = 0; i < menuItems.length; i++) {
+      menuItems[i].classList.remove("active");
+    }
+    blogMenuItem.classList.add("active");
   }
 
   render() {
@@ -162,7 +171,7 @@ class App extends Component {
                   </Link>
                 </li>
                 <li className="dropdown">
-                  <a className="dropbtn menuItem"><FontAwesome name="pencil" className="menuItemIcon" />Blog</a>
+                  <a id="blogMenuItem" className="dropbtn menuItem"><FontAwesome name="pencil" className="menuItemIcon" />Blog</a>
                   <div className="dropdown-content" style={{ marginLeft: this.state.dropdownMargin }}>
                     <Link to="/blog1" className="menuItem"
                       onClick={(e) => { this.changeActiveComp(e); this.showOrHideComponent(e) }}>
@@ -226,7 +235,7 @@ class App extends Component {
                       igazán ütős fegyver, a harcsákkal szemben...
                     </div>
                     <div className="readMoreContent">
-                      <Link to="/blog1" onClick={(e) => { this.showOrHideComponent(e) }}>
+                      <Link to="/blog1" onClick={(e) => { this.showOrHideComponent(e); this.addBlogActive() }}>
                         <div className="readMoreText">
                           <FontAwesome name="book" className="readMoreIcon" />
                           {this.state.object.data.newsContent.readmore}

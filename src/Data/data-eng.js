@@ -26,7 +26,8 @@ export const DataEng = {
       album: ["My Catches", "Nature Photos", "Guests", "Fishing Competition"]
     },
     blogContent: {
-      title: "Blog"
+      title: "Blog",
+      availableText: "Available only in Hungarian..."
     },
     contactContent: {
       title: "Contact",

@@ -20,7 +20,7 @@
 }
 
 .galleryContentWrapper {
-  height: 1537px;
+  height: 2273px;
   padding: 8px;
 }
 
@@ -40,7 +40,7 @@
 }
 
 #myCatchesGallery {
-  height: 368px;
+  height: 552px;
 }
 
 #naturePhotosGallery {
@@ -48,11 +48,11 @@
 }
 
 #guestsPhotosGallery {
-  height: 552px;
+  height: 736px;
 }
 
 #competitionPhotosGallery {
-  height: 184px;
+  height: 552px;
 }
 
 .naturePhotos {

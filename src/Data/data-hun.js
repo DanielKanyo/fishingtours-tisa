@@ -26,7 +26,8 @@ export const DataHun = {
       album: ["Fogásaim", "Természetfotók", "Vendégek", "Versenyhorgászat"]
     },
     blogContent: {
-      title: "Blog"
+      title: "Blog",
+      availableText: "Elérhető kizárólag magyar nyelven..."
     },
     contactContent: {
       title: "Kapcsolat",

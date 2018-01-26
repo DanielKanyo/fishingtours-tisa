@@ -18,7 +18,9 @@ class Blog1 extends Component {
       <div className="Blog">
         <div className="Content">
           <div className="title blogTitle">
-            <FontAwesome name="pencil" className="titleIcon" />{this.props.objectProp.data.blogContent.title}
+            <FontAwesome name="pencil" className="titleIcon" />
+            {this.props.objectProp.data.blogContent.title}
+            <span className="availableText"> ({this.props.objectProp.data.blogContent.availableText})</span>
           </div>
           <div className="contentWrapper blogContentWrapper">
             <div className="blogContentTitle">
