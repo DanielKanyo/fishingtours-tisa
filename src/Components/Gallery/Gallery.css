@@ -33,8 +33,9 @@
 }
 
 .albumTitle {
-  padding: 4px 0px 8px 15px;
-  border-bottom: 1px solid rgba(1, 1, 1, 0.2);
+  padding: 8px 0px 8px 15px;
+  background: rgba(1, 1, 1, 0.2);
+  border-radius: 4px;
   margin-bottom: 8px;
 }
 

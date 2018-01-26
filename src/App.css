@@ -40,6 +40,7 @@ li a {
   border: 1px solid #2da019;
   border-radius: 4px;
   text-decoration: none;
+  transition: 0.1s;
 }
 
 .dropbtn:hover {
@@ -48,6 +49,7 @@ li a {
 
 li a:hover, .dropdown:hover .dropbtn {
   background-color: #36bd1e;
+  transition: 0.1s;
 }
 
 li.dropdown {
@@ -80,6 +82,7 @@ li.dropdown {
   text-align: left;
   width: 950px;
   float: left;
+  transition: 0.1s;
 }
 
 .dropdown-content a:hover {
@@ -100,10 +103,7 @@ li.dropdown {
 
 .menuItem:hover .entryTitle {
   background: #36bd1e;
-}
-
-.entryTitle:hover {
-  background: #36bd1e;
+  transition: 0.1s;
 }
 
 .entryDate {
