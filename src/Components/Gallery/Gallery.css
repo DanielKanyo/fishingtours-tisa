@@ -20,7 +20,7 @@
 }
 
 .galleryContentWrapper {
-  height: 690px;
+  height: 1537px;
   padding: 8px;
 }
 
@@ -47,7 +47,25 @@
   height: 184px;
 }
 
+#guestsPhotosGallery {
+  height: 552px;
+}
+
+#competitionPhotosGallery {
+  height: 184px;
+}
+
 .naturePhotos {
+  clear: both;
+  margin-top: 8px;
+}
+
+.guestsPhotos {
+  clear: both;
+  margin-top: 8px;
+}
+
+.competitionPhotos {
   clear: both;
   margin-top: 8px;
 }
