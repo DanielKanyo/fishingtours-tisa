@@ -93,7 +93,7 @@ class Blog1 extends Component {
             </div>
             <div className="contentSocialFooter">
               <FacebookProvider appId="320234841816215">
-                <Like href="http://fishingtours-tisa/blog1" action="recommend" layout="button_count" share />
+                <Like href="http://www.fishingtours-tisa/blog1" action="recommend" layout="button_count" share />
               </FacebookProvider>
             </div>
           </div>

@@ -18,10 +18,10 @@ import Contact from './Components/Contact/Contact';
 import Sidebar from './Components/Sidebar/Sidebar';
 import Guestfishing from './Components/Guestfishing/Guestfishing';
 
-let url = window.location.href;
+let url = window.location.host;
 let display;
 
-if (url.length === 22) {
+if (url.length === 21) {
   display = "block";
 } else {
   display = "none"
