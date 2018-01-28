@@ -32,7 +32,7 @@ class About extends Component {
 
             <div className="contentSocialFooter aboutFooter">
               <FacebookProvider appId="320234841816215">
-                <Like href="http://www.fishingtours-tisa/about" action="recommend" layout="button_count" share />
+                <Like href="https://www.fishingtours-tisa/about" action="recommend" layout="button_count" share />
               </FacebookProvider>
             </div>
           </div>

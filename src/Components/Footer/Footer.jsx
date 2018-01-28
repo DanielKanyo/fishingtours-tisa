@@ -14,11 +14,11 @@ class Footer extends Component {
     return (
       <div className="Footer">
         <div className="footerCopy" >
-          Copyright © 2018
+          Copyright © {(new Date()).getFullYear()}
         </div>
         <div className="footerSocial" >
           <FacebookProvider appId="320234841816215">
-            <Like href="http://www.fishingtours-tisa" layout="button_count" share />
+            <Like href="https://www.fishingtours-tisa" layout="button_count" share />
           </FacebookProvider>
         </div>
       </div>
