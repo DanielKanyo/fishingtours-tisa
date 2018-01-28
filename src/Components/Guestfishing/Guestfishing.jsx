@@ -144,7 +144,7 @@ class Guestfishing extends Component {
 
             <div className="contentSocialFooter guestfishingFooter">
               <FacebookProvider appId="320234841816215">
-                <Like href="https://www.fishingtours-tisa/guestfishing" action="recommend" layout="button_count" share />
+                <Like href="https://www.fishingtours-tisa.com/guestfishing" action="recommend" layout="button_count" share />
               </FacebookProvider>
             </div>
 

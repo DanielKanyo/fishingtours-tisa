@@ -18,7 +18,7 @@ class Footer extends Component {
         </div>
         <div className="footerSocial" >
           <FacebookProvider appId="320234841816215">
-            <Like href="https://www.fishingtours-tisa" layout="button_count" share />
+            <Like href="https://www.fishingtours-tisa.com" layout="button_count" share />
           </FacebookProvider>
         </div>
       </div>
