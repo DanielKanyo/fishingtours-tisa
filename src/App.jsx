@@ -69,17 +69,17 @@ class App extends Component {
     if (elementText === "HUN") {
       this.setState({
         object: DataHun,
-        dropdownMargin: -356
+        dropdownMargin: -353
       });
     } else if (elementText === "ENG") {
       this.setState({
         object: DataEng,
-        dropdownMargin: -329
+        dropdownMargin: -328
       });
     } else {
       this.setState({
         object: DataSrb,
-        dropdownMargin: -338
+        dropdownMargin: -336
       });
     }
   }
