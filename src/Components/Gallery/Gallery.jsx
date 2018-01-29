@@ -272,7 +272,7 @@ class Gallery extends Component {
             <div className="gallerySocialWrapper">
               <div className="contentSocialFooter">
                 <FacebookProvider appId="320234841816215">
-                  <Like href="https://www.fishingtours-tisa.com/gallery" action="recommend" layout="button_count" share />
+                  <Like href="https://www.fishingtours-tisa.com/gallery" action="recommend" layout="button_count" share="false" />
                 </FacebookProvider>
               </div>
             </div>
