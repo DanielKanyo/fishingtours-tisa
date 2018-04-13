@@ -36,7 +36,7 @@ class App extends Component {
     this.state = {
       object: DataEng,
       index: 0,
-      dropdownMargin: -328,
+      dropdownMargin: -329,
       showOrHideNews: display
     }
     this.changeLanguage = this.changeLanguage.bind(this);
@@ -69,17 +69,17 @@ class App extends Component {
     if (elementText === "HUN") {
       this.setState({
         object: DataHun,
-        dropdownMargin: -353
+        dropdownMargin: -356
       });
     } else if (elementText === "ENG") {
       this.setState({
         object: DataEng,
-        dropdownMargin: -328
+        dropdownMargin: -329
       });
     } else {
       this.setState({
         object: DataSrb,
-        dropdownMargin: -336
+        dropdownMargin: -338
       });
     }
   }
